@@ -308,8 +308,17 @@ header {
 }
 
 /* desktop settings */
+@media (min-width: 1801px) and (max-width: 1900px){
+ 
+    .wrapper .projects .flex-container .project-description {
+        line-height: 1.4rem;
+    }
+    .wrapper .projects .flex-container .project-description a {
+        line-height: 1.4rem;
+    }
+}
 
-@media (min-width: 1601px) and (max-width:1800px){
+@media (min-width: 1601px) and (max-width:1871px){
     .wrapper .skills .grid-container {
         grid-template-columns: repeat(8, 1fr);
     }
@@ -317,6 +326,35 @@ header {
     .wrapper .skills .grid-container .grid-item img{
         margin-left: 1.7rem;
      }
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+    }
 }
 
 @media (min-width: 1458px) and (max-width:1600px){
@@ -327,6 +365,36 @@ header {
     .wrapper .skills .grid-container .grid-item img{
         margin-left: 2rem;
      }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
 }
 
 @media (min-width: 1314px) and (max-width:1457px){
@@ -337,6 +405,36 @@ header {
     .wrapper .skills .grid-container .grid-item img{
         margin-left: 2rem;
      }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
 }
 
 @media (min-width: 1201px) and (max-width:1313px){
@@ -347,11 +445,38 @@ header {
     .wrapper .skills .grid-container .grid-item img{
         margin-left: 1.3rem;
      }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        height: 15%;
+        margin-left: 0.5%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
 }
 
 /* mobile settings below */
-
-/* vertical orientation */
 @media (max-width: 920px) {
     .toggleButton {
         display: flex;
@@ -567,7 +692,7 @@ header {
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -637,8 +762,7 @@ header {
     }
 
     .wrapper .skills .grid-container .grid-item img{
-        margin-left: 2.4rem;
-        margin-top: 1rem;
+        margin-left: 2.5rem; 
      }
 
     .wrapper .projects .flex-container .flex-item .main-project-image {
@@ -657,7 +781,7 @@ header {
     
     .wrapper .projects .flex-container .subtitle {
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.07rem;
         line-height: 1.8rem;
         text-align: center;
     }
@@ -684,6 +808,64 @@ header {
         margin-top: 1.5rem;
     }
 
+}
+
+@media (max-width: 390px) {
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-right: -12%;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 30%;
+        display: flex;
+        padding: min(20vh, 10rem) 2em;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLinks li {
+        margin-right: 1em;
+        text-align: right;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .wrapper {
+        padding: 10rem 3% 10% 3%; 
+    }
+
+    .wrapper .skills .grid-container .grid-item {
+        padding: 0.5rem;
+        margin-top: 1rem;
+     }
+
+    .wrapper .projects .flex-container .subtitle {
+        font-size: 0.981rem;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        text-align: left;
+    }
 }
 
 @media (max-width: 384px) {
@@ -728,6 +910,14 @@ header {
 
     .wrapper {
         padding: 10rem 3% 10% 3%; 
+    }
+
+    .wrapper .skills .grid-container .grid-item {
+        padding: 0.5rem;
+     }
+
+    .wrapper .projects .flex-container .subtitle {
+        font-size: 0.981rem;
     }
 
     .wrapper .projects .flex-container .project-description {
@@ -783,9 +973,12 @@ header {
     }
 
     .wrapper .skills .grid-container .grid-item img{
-        margin-left: 1.8rem;
-        margin-top: 1rem;
+        margin-left: 2.4rem;
      }
+
+     .wrapper .projects .flex-container .subtitle {
+        font-size: 0.958rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -850,8 +1043,7 @@ header {
     }
 
     .wrapper .skills .grid-container .grid-item img{
-        margin-left: 1.8rem;
-        margin-top: 1rem;
+        margin-left: 2.2rem; 
      }
 
     .wrapper .projects{
@@ -874,7 +1066,7 @@ header {
     .wrapper .projects .flex-container .subtitle {
         margin: 2% 0 2% 0;
         line-height: 120%;
-        font-size: 2.1ch;
+        font-size: 1.85ch;
         text-align: center;
     }
 
@@ -921,7 +1113,6 @@ header {
     }
 }
 
-/* landscape orientation */
 @media (min-width: 1081px) and (max-width: 1200px) and (orientation: landscape) {
 
     .toggleButton {
