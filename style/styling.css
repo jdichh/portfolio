@@ -8,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    scroll-padding-top: 10em;
+    scroll-padding-top: 6em;
     margin: 0;
     padding: 0;
     background-color: var(--dark-blue);
@@ -304,7 +304,8 @@ header {
 
 /* mobile settings below */
 
-@media (max-width: 57.5em) {
+/* mobile vertical orientation */
+@media (max-width: 920px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -345,7 +346,7 @@ header {
     }
 }
 
-@media (max-width: 50.625em) /* 810px iPad */ {
+@media (max-width: 810px) {
 
     .wrapper .about p {
         font-size: 1.25rem;
@@ -405,7 +406,7 @@ header {
     }
 }
 
-@media (max-width: 26.75em) /* 428px iPhone 12/13 Pro Max */ {
+@media (max-width: 428px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -519,121 +520,7 @@ header {
     }
 }
 
-@media (max-width: 25.875em) /* 414px iPhone 11 Pro Max */ {
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -8%;
-        margin-top: -0.5%;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 30%;
-        display: flex;
-        padding: min(20vh, 10rem) 2em;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-    }
-
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navLinks li {
-        margin-right: 1em;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        padding: 0.5rem 1rem;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
-    .wrapper {
-        padding: 10rem 2% 10% 2%; 
-        margin: 0 1% 0 1%;
-    }
-
-    .wrapper .about img {
-        width: 280px;
-        height: 330px;
-        margin-left: 14%;
-        margin-bottom: 5%;
-    }
-
-    .wrapper .about p {
-        text-align: left;
-        margin-top: 1px;
-        font-size: 2.5ch;
-        padding: 0 0 0 3.5%;
-    }
-
-    .wrapper .skills .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .wrapper .skills .grid-container .grid-item img{
-        margin-left: 2.5rem;
-        margin-top: 1rem;
-     }
-
-    .wrapper .projects .flex-container .subtitle {
-        line-height: 1.4rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        width: 100%;
-        height: 15%;
-        margin-left: 0%;
-        margin-bottom: 2%;
-    }
-
-    .wrapper .projects .flex-container .title {
-        font-size: 1.8rem;
-        line-height: 2rem;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .wrapper .projects .flex-container .subtitle {
-        margin: 0;
-        font-size: 1rem;
-        line-height: 1.8rem;
-        text-align: center;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        margin: 0;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        text-align: left;
-    }
-
-    .wrapper .projects .flex-container .project-description a {
-        font-size: 1.1rem;
-        text-align: left;
-        line-height: 0rem;
-    }
-
-    .wrapper .projects .flex-container .project-hyperlinks {
-        display: flex;
-        margin: 5% 0 0 1%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 25.75em) /* 412px Galaxy Note 20 and Ultra */ {
+@media (max-width: 412px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -752,7 +639,7 @@ header {
 
 }
 
-@media (max-width: 24em) /* 384px Galaxy S20+ */{
+@media (max-width: 384px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -801,7 +688,7 @@ header {
     }
 }
 
-@media (max-width: 23.4375em) /* 375px iPhone 11 Pro */ {
+@media (max-width: 375px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -854,7 +741,7 @@ header {
      }
 }
 
-@media (max-width: 22.5em) /* 360px Galaxy S10, S10+, S20 */ {
+@media (max-width: 360px) {
     .toggleButton {
         display: flex;
         z-index: 9999;
@@ -987,3 +874,425 @@ header {
     }
 }
 
+/* mobile landscape orientation */
+@media (max-width: 1280px) and (orientation: landscape) {
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-right: 2.75%;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 50%;
+        display: flex;
+        padding: min(30vh, 7rem) 1em;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .navLinks li {
+        margin: 1.7em;
+        text-align: right;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .wrapper .about p {
+        font-size: 1.25rem;
+        margin-left: 0; 
+        text-align: left;
+    }
+
+    .wrapper .about img {
+        width: 290px;
+        height: 340px;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 1.7rem;
+        margin-top: 1rem;
+     }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        width: 100%;
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 1080px) and (orientation: landscape) {
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-right: 2.75%;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 50%;
+        display: flex;
+        padding: min(30vh, 7rem) 1em;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .navLinks li {
+        margin: 1.7em;
+        text-align: right;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .wrapper .about p {
+        font-size: 1.25rem;
+        margin-left: 0; 
+        text-align: left;
+    }
+
+    .wrapper .about img {
+        width: 290px;
+        height: 340px;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 3rem;
+        margin-top: 1rem;
+     }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        width: 100%;
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 926px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: 1.5%;
+    }
+
+    .navLinks {
+        padding: min(25vh, 10rem) 0.8em;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .navLinks li {
+        margin: 0.7em;
+        text-align: right;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+    
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 2.1rem;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: 1.25%;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 50%;
+        display: flex;
+        padding: min(30vh, 7rem) 1em;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .navLinks li {
+        margin: 0.7em;
+        text-align: right;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .wrapper .about p {
+        font-size: 1.25rem;
+        margin-left: 0; 
+        text-align: left;
+    }
+
+    .wrapper .about img {
+        width: 290px;
+        height: 340px;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 2rem;
+        margin-top: 1rem;
+     }
+
+     .wrapper .projects .flex-container .flex-item .main-project-image {
+        width: 100%;
+        height: 15%;
+        margin-left: 0.5%;
+        margin-bottom: 2%;
+    }
+
+    .wrapper .projects .flex-container .project-description {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrapper .projects .flex-container .subtitle {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    .wrapper .projects .flex-container .project-description a {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 854px) and (orientation: landscape) {
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-right: 0.75%;
+    }
+
+    .navLinks {
+        padding: min(25vh, 10rem) 0.8em;
+    }
+    
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 1.6rem;
+    }
+
+    .wrapper .skills .grid-container .js img{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: 0.1%;
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 1.3rem;
+    }
+
+    .wrapper .skills .grid-container .js img{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: -0.1%;
+    }
+
+    .navLinks {
+        padding: min(20vh, 8rem) 0.8em;
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 1.3rem;
+    }
+
+    .wrapper .skills .grid-container .js img{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (max-width: 760px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: -0.5%;
+    }
+
+    .navLinks {
+        padding: min(20vh, 8rem) 0.8em;
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 0.9rem;
+    }
+
+    .wrapper .skills .grid-container .js img{
+        margin-left: 1.6rem;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+
+    .toggleButton {
+        margin-right: -2%;
+    }
+
+    .navLinks {
+        padding: min(20vh, 8rem) 0.8em;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wrapper .skills .grid-container .grid-item img{
+        margin-left: 2rem;
+    }
+}
