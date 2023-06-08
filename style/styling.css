@@ -237,6 +237,12 @@ header {
     color: var(--nearly-rotten-mango);
 }
 
+.wrapper .projects .more-to-come {
+    font-style: italic;
+    text-align: center;
+    color: var(--nearly-rotten-mango);
+}
+
 .quotation {
     display: flex;
     margin-top: 2rem;
