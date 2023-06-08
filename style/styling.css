@@ -886,7 +886,7 @@ header {
     .toggleButton {
         display: flex;
         z-index: 9999;
-        margin-right: 2.75%;
+        margin-right: 3.5%;
     }
 
     .navLinks {
