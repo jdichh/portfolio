@@ -1276,6 +1276,10 @@ header {
     .wrapper .skills .grid-container .js img{
         margin-left: 1.6rem;
     }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 667px) and (orientation: landscape) {
@@ -1294,5 +1298,9 @@ header {
 
     .wrapper .skills .grid-container .grid-item img{
         margin-left: 2rem;
+    }
+
+    .wrapper .projects .flex-container .title {
+        font-size: 1.9rem;
     }
 }
