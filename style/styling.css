@@ -19,12 +19,11 @@ body {
     overflow-x: hidden;
 }
 
-
 .logo {
     font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 2.1rem;
     line-height: 31px;
     color: var(--nearly-rotten-mango);
 }
