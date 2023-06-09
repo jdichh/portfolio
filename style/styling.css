@@ -174,12 +174,12 @@ header {
 }
 
 .wrapper .skills .grid-container .grid-item img{
-    margin-left: calc(2rem + 0.390625vw);
+    margin-left: calc(1.8rem + 0.390625vw);
     margin-top: calc(1rem + 0.390625vh);
 }
 
 .wrapper .skills .grid-container p{
-    place-items: center;
+    margin-left: calc(0.4rem + 0.390625vw);
  }
 
 .wrapper .projects img {
