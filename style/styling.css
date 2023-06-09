@@ -174,7 +174,7 @@ header {
 }
 
 .wrapper .skills .grid-container .grid-item img{
-    margin-left: calc(1.85rem + 0.390625vw);
+    margin-left: calc(2rem + 0.390625vw);
     margin-top: calc(1rem + 0.390625vh);
 }
 
