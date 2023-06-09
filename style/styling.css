@@ -222,7 +222,7 @@ header {
     font-size: calc(0.8rem + 0.390625vw);
     text-align: justify;    
     margin: 0 0 calc(0.1rem + 0.390625vw) 0;
-    line-height: calc(0.7rem + 0.390625vh);
+    line-height: calc(1rem + 0.390625vh);
 }
 
 .wrapper .projects .flex-container .project-description {
@@ -232,14 +232,14 @@ header {
     font-weight: 400;
     text-align: justify;
     margin: 0 0 calc(1rem + 0.390625vw) 0; 
-    line-height: calc(1.5rem + 0.390625vh);
+    line-height: 1.5rem;
 }
 
 .wrapper .projects .flex-container .flex-item .project-description a {
     color: var(--nearly-rotten-mango);
     margin: 0 0 calc(1rem + 0.390625vw) 0;
     font-size: calc(0.81rem + 0.390625vw);
-    line-height: calc(1.5rem + 0.390625vh);
+    line-height: 1.5rem;
 }
 
 .wrapper .projects .flex-container .flex-item .project-hyperlinks {
