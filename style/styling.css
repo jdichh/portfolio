@@ -1046,7 +1046,12 @@ header {
      }
 
      .wrapper .skills .grid-container .grid-item img{
-        margin-left: calc(2.5rem + 0.390625vw);
+        margin-left: 3rem;
+    }
+
+    .wrapper .skills .grid-container p{
+        font-size: calc(1.063rem + 0.390625vw);
+        margin-left: 0.5rem;
     }
 
      .wrapper .projects .flex-container .title {
