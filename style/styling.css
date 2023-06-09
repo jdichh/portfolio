@@ -1046,7 +1046,7 @@ header {
      }
 
      .wrapper .skills .grid-container .grid-item img{
-        margin-left: calc(2.7rem + 0.390625vw);
+        margin-left: calc(2.5rem + 0.390625vw);
     }
 
      .wrapper .projects .flex-container .title {
