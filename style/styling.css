@@ -219,7 +219,6 @@ header {
     font-family: 'Ubuntu Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: calc(0.8rem + 0.390625vw);
     text-align: justify;    
     margin: 0 0 calc(0.1rem + 0.390625vw) 0;
     line-height: calc(1rem + 0.390625vh);
@@ -270,7 +269,7 @@ header {
 
 .quotation {
     display: flex;
-    margin-top: calc(2rem + 0.390625vh);
+    margin-top: calc(1.5rem + 0.390625vh);
     flex-direction: column;
     font-family: 'Ubuntu Mono';
     font-style: normal;
