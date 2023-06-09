@@ -210,8 +210,7 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: calc(1.8rem + 0.390625vw);
-    margin: 0 0 calc(0.2rem + 0.390625vw) 0;
-    line-height: calc(1.5rem + 0.390625vh);
+    margin:0 0 calc(0.5rem + 0.390625vh) 0;
     text-align: left;
 }
 
@@ -233,25 +232,20 @@ header {
     font-weight: 400;
     text-align: justify;
     margin: 0 0 calc(1rem + 0.390625vw) 0; 
-    line-height: calc(1.2rem + 0.390625vh);
+    line-height: calc(1.5rem + 0.390625vh);
 }
 
 .wrapper .projects .flex-container .flex-item .project-description a {
     color: var(--nearly-rotten-mango);
     margin: 0 0 calc(1rem + 0.390625vw) 0;
     font-size: calc(0.81rem + 0.390625vw);
-    line-height: calc(1.35rem + 0.390625vh);
+    line-height: calc(1.5rem + 0.390625vh);
 }
 
 .wrapper .projects .flex-container .flex-item .project-hyperlinks {
     display: flex;
     justify-content: flex-end;
 }
-
-/* .wrapper .projects .flex-container .flex-item .project-hyperlinks img {
-    width: calc(2rem + 0.390625vw); 
-    height: calc(2rem + 0.390625vh);
-} */
 
 .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
     margin: calc(1% - 0.390625vh) calc(1% - 0.390625vh) 0 0;
@@ -264,10 +258,6 @@ header {
     padding: 0 0 0 0;
     margin: 0 calc(0.5rem + 0.390625vw) 0 calc(0.625rem + 0.390625vw);
     color: var(--nearly-rotten-mango);
-}
-
-.wrapper .projects .flex-container .flex-item .project-hyperlinks a p:hover {
-    color: var(--off-white);
 }
 
 .wrapper .projects .more-to-come {
