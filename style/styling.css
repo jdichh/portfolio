@@ -1705,7 +1705,7 @@ header {
 
 }
 
-@media (max-width: 896px) and (orientation: landscape) {
+@media (max-width: 897px) and (orientation: landscape) {
     .wrapper .skills .grid-container .grid-item img{
         margin-left: calc(1.9rem + 0.390625vw);
     }
