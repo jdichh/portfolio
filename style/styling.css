@@ -1051,7 +1051,7 @@ header {
 
     .wrapper .skills .grid-container p{
         font-size: calc(1.063rem + 0.390625vw);
-        margin-left: 0.5rem;
+        margin-left: 1rem;
     }
 
      .wrapper .projects .flex-container .title {
