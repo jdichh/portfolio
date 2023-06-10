@@ -644,13 +644,13 @@ header {
     }
     
     .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        
+        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem); 
     }
 
     .wrapper .projects .flex-container .flex-item .project-hyperlinks {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        margin-left: -1rem;
     }
 
     .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
