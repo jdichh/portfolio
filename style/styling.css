@@ -121,6 +121,7 @@ header {
 
 .wrapper .about {
     margin-bottom: 5rem;
+    /* outline: 1px solid red; */
 }
 
 .wrapper .about .emphasize-using-color{
@@ -130,7 +131,7 @@ header {
 .wrapper .about .about-hyperlinks {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2.1%;
+    /* outline: 1px solid red; */
 }
 
 .wrapper .about .about-hyperlinks img {
