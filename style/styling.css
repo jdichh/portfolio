@@ -104,8 +104,7 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: calc(0.8rem + 0.390625vw);
-    line-height: calc(1.5rem + 0.390625vw);
-    text-align: justify;
+    text-align: left;
     color: var(--off-white);
     margin-right: calc(0.1% + 0.390625vw);
 }
