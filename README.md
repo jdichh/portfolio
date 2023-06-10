@@ -1,1 +1,1 @@
-My personal portfolio. This will be continually improve as I improve.
+My personal portfolio. This will be continually improved as I improve.
