@@ -1146,6 +1146,10 @@ header {
     .wrapper .projects .flex-container .project-description {
         text-align: left;
     }
+
+    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1268,6 +1272,10 @@ header {
 
     .wrapper .skills .grid-container .grid-item img{
         margin-left: calc(2.3rem + 0.390625vw);
+    }
+
+    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p {
+        font-size: 0.9rem;
     }
 }
 
