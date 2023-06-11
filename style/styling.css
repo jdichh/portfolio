@@ -186,8 +186,6 @@ a,
     color: var(--yellow-orange);
 }
 
-
-
 /* About Section */
 .main-about-image {
     margin-right: 1rem;
@@ -213,7 +211,6 @@ a,
     margin-top: 2rem;
     max-width: 50px;
 }
-
 
 /* Skills Section */
 .skills {
@@ -246,8 +243,6 @@ a,
 .grid-item .svg-font-size{ 
     font-size: 1.2rem;
  }
-
-
 
 /* Projects Section */
 .projects {
@@ -308,7 +303,7 @@ a,
     font-size: 1rem;
 }
 
-@media screen and (min-width: 1275px) and (max-width: 1487px) {
+@media (min-width: 1275px) and (max-width: 1487px) {
 
     * {
         scroll-padding-top: 4em;
@@ -400,7 +395,7 @@ a,
 
 } 
 
-@media screen and (min-width: 1062px) and (max-width: 1274px) {
+@media (min-width: 1062px) and (max-width: 1274px) {
 
     * {
         scroll-padding-top: 4em;
@@ -502,7 +497,7 @@ a,
 
 } 
 
-@media screen and (min-width: 851px) and (max-width: 1062px) {
+@media (min-width: 851px) and (max-width: 1062px) {
 
     * {
         scroll-padding-top: 4em;
@@ -606,7 +601,7 @@ a,
 
 } 
 
-@media screen and (min-width: 638px) and (max-width: 850px) {
+@media (min-width: 638px) and (max-width: 850px) {
     
     h1 {
         font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
@@ -732,7 +727,7 @@ a,
 
 } 
 
-@media screen and (min-width: 425px) and (max-width: 637px) {
+@media (min-width: 425px) and (max-width: 637px) {
 
     h1 {
         font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
@@ -859,7 +854,7 @@ a,
 
 } 
 
-@media screen and (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 424px) {
 
     * {
         scroll-padding-top: 4em;
@@ -914,7 +909,7 @@ a,
     }
 
     .about-text-group {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
+        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
         margin: 0;
         text-align: left;
         /* outline: 1px solid red; */
@@ -967,7 +962,7 @@ a,
     }
 
     .more-to-come {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
+        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
     }
     
     .quotation {
@@ -975,12 +970,12 @@ a,
     }
     
     .quotation p {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
+        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
     }
     
     .quotation b {
         margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
+        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
     }
     
     .footer {
