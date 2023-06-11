@@ -237,12 +237,12 @@ a,
  }
 
 .grid-item svg {
-    width: 1.25em;
-    height: 1.25em;
+    width: 1em;
+    height: 1em;
 }
 
 .grid-item .svg-img-size {
-    font-size: 2.7rem;
+    font-size: 2.75rem;
     line-height: 3rem;
 }
 
