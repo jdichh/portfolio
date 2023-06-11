@@ -1,5 +1,6 @@
 const navLinks = document.querySelector('.navLinks')
 const toggleButton = document.querySelector('.toggleButton')
+window.addEventListener(`popstate`, handle);
 
 toggleButton.addEventListener('click', () => {
     const visibility = navLinks.getAttribute('data-visible');
@@ -12,3 +13,9 @@ toggleButton.addEventListener('click', () => {
         toggleButton.setAttribute('aria-expanded', false)
     }
 });
+
+function handle() {
+  if (location.hash) {
+    history.replaceState(null, ``, location.pathname);
+  }
+}
