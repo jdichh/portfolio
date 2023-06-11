@@ -307,7 +307,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
         text-align: left;
     }
@@ -398,7 +398,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
         text-align: left;
     }
@@ -489,7 +489,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
         text-align: left;
     }
@@ -577,7 +577,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
         text-align: center;
     }
@@ -693,7 +693,6 @@ header {
 
 } 
 
-
 @media screen and (min-width: 425px) and (max-width: 637px) {
 
     h1 {
@@ -707,7 +706,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
         text-align: center;
     }
@@ -823,7 +822,6 @@ header {
 
 } 
 
-
 @media screen and (min-width: 320px) and (max-width: 424px) {
 
     * {
@@ -841,7 +839,7 @@ header {
     }
 
     /* subtitle of project -> tech used*/
-    h4 {
+    h3 {
         font-size: clamp(0.9rem, -0.3656rem + 5.6250vw, 1.125rem);
         text-align: center;
     }
@@ -897,6 +895,10 @@ header {
     .wrapper .about .main-about-image {
         inline-size: 100%;
         margin-bottom: 1rem;
+    }
+
+    .wrapper .skills .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     }
 
     .wrapper .skills .grid-container p{
