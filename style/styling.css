@@ -20,6 +20,18 @@ body {
     overflow-x: hidden;
 }
 
+/* mobile toggle button*/
+.toggleButton {
+    display: none;
+    position: absolute;
+    top: 0.9rem;
+    right: calc(3.5rem + 0.390625vw);
+    width: calc(2.5rem + 0.390625vw);
+    height: calc(1.875rem + 0.390625vh);
+    border: 0;
+    /* outline: 1px solid red; */
+}
+
 .logo {
     font-weight: 600;
     font-size: 2rem;
@@ -29,8 +41,6 @@ body {
 header {
     position: fixed;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 10%;
     border-bottom: 1px solid var(--yellow-orange);
 }
@@ -57,28 +67,15 @@ header {
     transition: all 0.5 ease 0s;
 }
 
-.logo, 
-h1, 
-h2, 
-.navlinks, 
-li a, .wrapper p, 
-.wrapper .projects .flex-container .project-description, 
-.quotation {
+.align-items-center {
+    align-items: center;
+}
+
+li a, .wrapper p {
     color: var(--off-white);
 }
 
-.wrapper .about .main-about-image,
-.wrapper .skills .grid-container .grid-item,
-.wrapper .projects .flex-container .flex-item .main-project-image {
-    outline: 1px solid var(--off-white);
-}
-
-h3, 
-.navLinks li a:hover, 
-.wrapper .projects .flex-container .flex-item .project-description a, 
-.wrapper .projects .flex-container .flex-item .project-description a p, 
-.wrapper .projects .more-to-come, 
-.footer {
+.navLinks li a:hover {
     color: var(--yellow-orange);
 }
 
@@ -99,183 +96,219 @@ li, a {
     text-decoration: none;
 }
 
-.font-weight-400 {
+h3,
+li,
+a,
+.wrapper p,
+.wrapper .projects .flex-container .project-description,
+.quotation {
     font-weight: 400;
+}
+
+.block-size-auto {
+    block-size: auto;
+}
+
+.float-left-img {
+    float: left;
 }
 
 .flex {
     display: flex;
 }
 
-.wrapper {
+.flex-direction-column {
     flex-direction: column;
-    padding: 5.5% 10%;
 }
 
-.wrapper .about .main-about-image {
-    margin-right: 1rem;
-    float: left;
-    inline-size: 16%;
-    block-size: auto;
+.font-style-italic {
+    font-style: italic;
 }
 
-.wrapper p {
-    font-size: 1.3rem;
+.height-auto {
+    height: auto;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.offwhite-outline {
+    outline: 1px solid var(--off-white)
+}
+
+.orange-outline {
+    outline: 1px solid var(--yellow-orange);
+}
+
+.text-color-off-white {
+    color: var(--off-white);
+}
+
+.text-color-yellow-orange {
+    color: var(--yellow-orange);
+}
+
+.text-align-left {
     text-align: left;
 }
 
-.wrapper .about {
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.wrapper {
+    padding: 5.5% 10%;
+}
+
+.about .about-quote, 
+.project-hyperlinks a p {
+    color: var(--yellow-orange);
+}
+
+
+
+/* About Section */
+.main-about-image {
+    margin-right: 1rem;
+    inline-size: 16%;
+}
+
+.about p {
+    font-size: 1.3rem;
+}
+
+.about {
     margin-bottom: 5rem;
     /* outline: 1px solid red; */
 }
 
-.wrapper .about .emphasize-using-color{
-    color: var(--yellow-orange)
-}
+/* .about-hyperlinks {
+    outline: 1px solid red;
+} */
 
-.wrapper .about .about-hyperlinks {
-    justify-content: flex-end;
-    /* outline: 1px solid red; */
-}
-
-.wrapper .about .about-hyperlinks img {
+.about-hyperlinks img {
     max-width: 45px;
     margin-left: 0.5rem;
-    height: auto;
 }
 
-.wrapper .about p {
+.about p {
     margin-bottom: 0.9rem;
 }
 
-.wrapper .skills {
+
+
+/* Skills Section */
+.skills {
     margin-bottom: 2.5rem;
     /* outline: 1px solid red; */
 }
 
-.wrapper .skills .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     margin-bottom: 2.5rem;
     /* outline: 1px solid red; */
 }
 
-.wrapper .skills .grid-container .grid-item {
+.grid-item {
     padding: 1rem;
     margin: 0.3em;
  }
 
-.wrapper .skills .grid-container .grid-item svg {
+.grid-item svg {
     width: 1.25em;
     height: 1.25em;
 }
 
-.wrapper .skills .grid-container .grid-item .svg-text {
+.grid-item .svg-img-size {
     font-size: 2.7rem;
     line-height: 3rem;
-    text-align: center;
 }
 
-.wrapper .skills .grid-container .grid-item .svg-text-center{ 
-    text-align: center;
+.grid-item .svg-font-size{ 
     font-size: 1.2rem;
  }
 
-.wrapper .projects {
+
+
+/* Projects Section */
+.projects {
     margin-top: 2.5rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--off-white);
+    border-bottom: 2px solid var(--yellow-orange);
     /* outline: 1px solid red; */
 }
 
-.wrapper .projects .flex-container .flex-item {
+.flex-container .flex-item {
     margin-bottom: 3.5rem;
 }
 
-.wrapper .projects .flex-container .flex-item .main-project-image {
-    float: left;
+.main-project-image {
     inline-size: 25%;
-    block-size: auto;
-    height: auto;
     margin: 0.5rem 1rem 0 0;
 }
 
-.wrapper .projects .flex-container .project-description {
+.flex-item .project-description{
     font-size: 1.1rem;
-    text-align: left;
     margin-top: 0.3rem;
 }
 
-.wrapper .projects .flex-container .flex-item .project-description a {
+.project-description a {
     font-size: 1.1rem;
 }
 
-.wrapper .projects .flex-container .flex-item .project-hyperlinks {
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+.project-hyperlinks a {
     margin-left: 1rem;
-    outline: 1px solid var(--yellow-orange);
 }
 
-.wrapper .projects .flex-container .flex-item .project-hyperlinks a p {
+.project-hyperlinks a p {
     font-size: 1rem;
     padding: 0.75rem;
 }
 
-.wrapper .projects .more-to-come {
-    /* outline: 1px solid red; */
+.more-to-come {
     font-size: 1rem;
-    font-style: italic;
-    text-align: center;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .quotation {
-    flex-direction: column;
     margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     width: 70%;
-    color: var(--off-white);
-
 }
 
 .quotation p {
     font-size: 1.1rem;
-    font-style: italic;
-    text-align: center;
 }
 
 .quotation b {
-    text-align: right;
     font-size: 1.1rem;
 }
 
 .footer {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 3rem;
     font-size: 0.9rem;
-    font-style: italic;
-    justify-content: center;
-}
-
-/* mobile toggle button*/
-.toggleButton {
-    position: absolute;
-    top: 0.9rem;
-    right: calc(3.5rem + 0.390625vw);
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: calc(2.5rem + 0.390625vw);
-    height: calc(1.875rem + 0.390625vh);
-    border: 0;
-    /* outline: 1px solid red; */
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1487px) {
@@ -304,48 +337,44 @@ li, a {
         padding: 10% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 16%;
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 35%;
         margin-bottom: 0.3rem;
         margin-top: 0.75rem;
     }
 
-    .wrapper .projects .flex-container .project-description {
+    .project-description {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: flex;
         justify-content: flex-end;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
         padding: 1rem;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
     
@@ -395,48 +424,44 @@ li, a {
         padding: 10% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 20%;
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 35%;
         margin-bottom: 0.3rem;
         margin-top: 0.75rem;
     }
 
-    .wrapper .projects .flex-container .project-description {
+    .project-description {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: flex;
         justify-content: flex-end;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
         padding: 1rem;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
     }
     
@@ -486,48 +511,45 @@ li, a {
         padding: 10% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 25%;
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 45%;
         margin-bottom: 0.3rem;
         margin-top: 0.75rem;
     }
-    .wrapper .projects .flex-container .project-description {
+
+    .project-description {
         font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: flex;
         justify-content: flex-end;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
         padding: 1rem;
         text-align: center;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
     }
     
@@ -587,16 +609,6 @@ li, a {
         border-left: 1px solid var(--yellow-orange);
     }
 
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .navLinks li {
         padding-bottom: 3rem;
         text-align: right;
@@ -606,58 +618,50 @@ li, a {
         font-size: 1.5rem;
     }
 
-    .navLinks.active {
-        display: flex;
-    }
-
     .wrapper {
         padding: 18.5% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 40%;
         margin-top: 0.3rem;
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 100%;
         margin-bottom: 0.3rem;
     }
 
-    .wrapper .projects .flex-container .project-description {
+    .project-description {
         font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem); 
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: flex;
         justify-content: center;
         margin-left: -1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1.2rem, 1.2536rem + -0.2679vw, 1.125rem);
         padding: 1rem;
         text-align: center;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
     }
     
@@ -716,16 +720,6 @@ li, a {
         border-left: 1px solid var(--yellow-orange);
     }
 
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .navLinks li {
         padding-bottom: 3rem;
         text-align: right;
@@ -735,58 +729,50 @@ li, a {
         font-size: 1.5rem;
     }
 
-    .navLinks.active {
-        display: flex;
-    }
-
     .wrapper {
         padding: 18.5% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 50%;
         margin-top: 0.75rem;
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 100%;
         margin-bottom: 0.3rem;
     }
 
-    .wrapper .projects .flex-container .project-description {
+    .project-description {
         font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-left: -1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1.1rem, 1.0499rem + 0.1887vw, 1.125rem);
         padding: 1rem;
         text-align: center;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
     }
     
@@ -849,81 +835,59 @@ li, a {
         border-left: 1px solid var(--yellow-orange);
     }
 
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .navLinks li {
         padding-bottom: 3rem;
         text-align: right;
     }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
+    
     .wrapper {
         padding: 18.5% 10%;
     }
 
-    .wrapper .about p {
+    .about p {
         font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
     }
 
-    .wrapper .about .main-about-image {
+    .main-about-image {
         inline-size: 100%;
         margin-bottom: 1rem;
     }
 
-    .wrapper .skills .grid-container {
+    .skills .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     }
 
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
+    .main-project-image {
         inline-size: 100%;
         margin-bottom: 0.3rem;
     }
 
-    .wrapper .projects .flex-container .project-description {
+    .project-description {
         font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
         margin-bottom: 1rem;
     }
     
-    .wrapper .projects .flex-container .flex-item .project-description a {
+    .project-description a {
         font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
+    .project-hyperlinks {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-left: -1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
+    .project-hyperlinks a {
         margin-bottom: 1rem;
     }
 
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
+    .project-hyperlinks a p{
         font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
         padding: 1rem;
         text-align: center;
     }
 
-    .wrapper .projects .more-to-come {
+    .more-to-come {
         font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
     }
     
