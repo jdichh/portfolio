@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Paul Dichoso</title>
     <link rel="stylesheet" href="style/styling.css">
+    <link rel="stylesheet" media="handheld" href="style/mobile_styling.css" async>
     <link rel="icon" href="img/tab.webp">
     <script src="js/mobileNav.js" defer></script>
 </head>
 <body>
 
-    <header>
+    <header class="flex">
         <div class="logo">jd/</div>
         <a href="javascript:void(0);" class="toggleButton" aria-controls="navLinksID" aria-expanded="false" role="button">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g  id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" fill="currentColor"></path> </g></svg>
         </a>
         <nav class="navBar">
             <ul class="navLinks" id="navLinksID" data-visible="false">
-                <li>
-                    <a href="#about">
+                <li class="font-weight-400">
+                    <a href="#about" class="font-weight-400">
                     <span aria-hidden="true">about/</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#skills">
+                <li class="font-weight-400">
+                    <a href="#skills" class="font-weight-400">
                         <span aria-hidden="true">skills/</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#tools">
+                <li class="font-weight-400">
+                    <a href="#tools" class="font-weight-400">
                         <span aria-hidden="true">tools/</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#projects">
+                <li class="font-weight-400">
+                    <a href="#projects" class="font-weight-400">
                        <span aria-hidden="true">projects/</span>
                     </a>
                 </li>
@@ -42,22 +43,21 @@
         </nav>
     </header>
 
-    <div class="wrapper">
-        
+    <div class="wrapper flex">
         <section class="about" id="about">
             <h1>about/</h1>
             <img class="main-about-image" src="img/me.webp" alt="A picture of me!">
-            <p>
+            <p class="font-weight-400">
                 I'm Jason Paul Dichoso, and I am a frontend developer. I love learning things about frontend development, 
                 and apply what I learn into my projects. <br>
             </p> 
-            <p class="emphasize-using-color">
+            <p class="emphasize-using-color font-weight-400">
                 I always remind myself that you can be better than you were yesterday, and always aim in learning new things.
             </p>
-            <p>As for my hobbies, I like to run, listen to music, play the electric guitar, occasionally play RPGs and racing games, and 
+            <p class="font-weight-400">As for my hobbies, I like to run, listen to music, play the electric guitar, occasionally play RPGs and racing games, and 
                 that's about it.
             </p>
-            <div class="about-hyperlinks">
+            <div class="about-hyperlinks flex">
                 <a href="https://www.linkedin.com/in/jason-paul-dichoso-a97a0026a/" target="_blank">
                     <img src="img/logo/linkedin.svg" alt="Button to my LinkedIn Profile">
                 </a>
@@ -170,13 +170,13 @@
                 <div class="flex-item">
                     <img class="main-project-image" src="img/ssu/1.webp" alt="A screenshot of the SSU Web Portal project." loading="lazy">
                     <h2>Security Services Unit Web Portal</h2>
-                    <h3>html css bootstrap javascript vue.js firebase</h3>
-                    <p class="project-description">
+                    <h3 class="font-weight-400">html css bootstrap javascript vue.js firebase</h3>
+                    <p class="project-description font-weight-400">
                         This was part of our capstone project which involved a mobile application, and this web application. It was made for the security personnel of Letran-Calamba, 
                         and the whole system serves as a <a href="https://en.wikipedia.org/wiki/Guard_tour_patrol_system" target="_blank">patrol system</a> for them. It was my 
                         first time diving into Vue.js, and it also gave me the chance to expand my JavaScript knowledge.
                     </p>
-                    <div class="project-hyperlinks">
+                    <div class="project-hyperlinks flex">
                         <a href="https://ssuwebsystem.netlify.app" target="_blank">
                             <p>Demo</p> 
                         </a>
@@ -216,13 +216,13 @@
         <p class="more-to-come">And more to come.</p>
         </section>
 
-        <div class="quotation">
+        <div class="quotation flex font-weight-400">
             <p>“That has been one of my mantras - focus and simplicity. Simple can be harder than complex.” </p>
             <b>- Plato</b>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer flex">
         <p>I created it without any external stuff - as my aim for this project was to be creative by limiting myself.
            It's not that they're bad, it's just for this project :))</p>
     </div> 

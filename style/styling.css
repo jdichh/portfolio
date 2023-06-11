@@ -13,6 +13,7 @@
     padding: 0;
     background-color: var(--dark-grey);
     scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -20,47 +21,12 @@ body {
 }
 
 .logo {
-    font-family: 'Outfit', sans-serif;
     font-weight: 600;
     font-size: 2rem;
     margin-left: 0.3rem;
-    color: var(--off-white);
-}
-
-h1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-    color: var(--off-white);
-}
-
-/* title of project */
-h2 { 
-    font-family: 'Outfit', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--off-white);
-}
-
-/* subtitle of project -> tech used*/
-h3 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--yellow-orange);
-}
-
-li, a {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--off-white);
-    text-decoration: none;
 }
 
 header {
-    display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
@@ -87,20 +53,63 @@ header {
     list-style: none;
 }
 
-.navLinks li a {
-    color: var(--off-white);
-}
-
 .navLinks li a:hover {
-    color: var(--yellow-orange);
     transition: all 0.5 ease 0s;
 }
 
-.wrapper {
+.logo, 
+h1, 
+h2, 
+.navlinks, 
+li a, .wrapper p, 
+.wrapper .projects .flex-container .project-description, 
+.quotation {
+    color: var(--off-white);
+}
+
+.wrapper .about .main-about-image,
+.wrapper .skills .grid-container .grid-item,
+.wrapper .projects .flex-container .flex-item .main-project-image {
+    outline: 1px solid var(--off-white);
+}
+
+h3, 
+.navLinks li a:hover, 
+.wrapper .projects .flex-container .flex-item .project-description a, 
+.wrapper .projects .flex-container .flex-item .project-description a p, 
+.wrapper .projects .more-to-come, 
+.footer {
+    color: var(--yellow-orange);
+}
+
+h1, 
+h2 {
+    /* h2 == title of project */ 
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    /* h3 == subtitle of project -> tech used*/ 
+    font-size: 1rem;
+}
+
+li, a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.flex {
     display: flex;
+}
+
+.wrapper {
     flex-direction: column;
     padding: 5.5% 10%;
-    
 }
 
 .wrapper .about .main-about-image {
@@ -108,15 +117,11 @@ header {
     float: left;
     inline-size: 16%;
     block-size: auto;
-    outline: 1px solid var(--off-white);
 }
 
 .wrapper p {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
     font-size: 1.3rem;
     text-align: left;
-    color: var(--off-white); 
 }
 
 .wrapper .about {
@@ -129,7 +134,6 @@ header {
 }
 
 .wrapper .about .about-hyperlinks {
-    display: flex;
     justify-content: flex-end;
     /* outline: 1px solid red; */
 }
@@ -159,7 +163,6 @@ header {
 .wrapper .skills .grid-container .grid-item {
     padding: 1rem;
     margin: 0.3em;
-    outline: 1px solid var(--off-white);
  }
 
 .wrapper .skills .grid-container .grid-item svg {
@@ -194,29 +197,22 @@ header {
     inline-size: 25%;
     block-size: auto;
     height: auto;
-    margin: 0 1rem 0 0;
-    outline: 1px solid var(--off-white);
+    margin: 0.5rem 1rem 0 0;
 }
 
 .wrapper .projects .flex-container .project-description {
     font-size: 1.1rem;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
     text-align: left;
     margin-top: 0.3rem;
-    color: var(--off-white);
 }
 
 .wrapper .projects .flex-container .flex-item .project-description a {
     font-size: 1.1rem;
-    color: var(--yellow-orange);
 }
 
 .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
- 
 }
 
 .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
@@ -227,7 +223,6 @@ header {
 .wrapper .projects .flex-container .flex-item .project-hyperlinks a p {
     font-size: 1rem;
     padding: 0.75rem;
-    color: var(--yellow-orange);
 }
 
 .wrapper .projects .more-to-come {
@@ -236,15 +231,11 @@ header {
     font-style: italic;
     text-align: center;
     margin-top: 6rem;
-    color: var(--yellow-orange);
 }
 
 .quotation {
-    display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -264,16 +255,13 @@ header {
 }
 
 .footer {
-    display: flex;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    font-family: 'Outfit', sans-serif;
     font-size: 0.9rem;
     font-style: italic;
     justify-content: center;
-    color: var(--yellow-orange);
 }
 
 /* mobile toggle button*/
@@ -289,673 +277,3 @@ header {
     border: 0;
     /* outline: 1px solid red; */
 }
-
-@media screen and (min-width: 1275px) and (max-width: 1487px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
-    }
-
-    .wrapper {
-        padding: 10% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 16%;
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 35%;
-        margin-bottom: 0.3rem;
-        margin-top: 0.75rem;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        padding: 1rem;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.2524rem + 1.8868vw, 1.25rem);
-    }
-
-} 
-
-@media screen and (min-width: 1062px) and (max-width: 1274px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
-    }
-
-    .wrapper {
-        padding: 10% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 20%;
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 35%;
-        margin-bottom: 0.3rem;
-        margin-top: 0.75rem;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        padding: 1rem;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.2524rem + 1.8868vw, 1.25rem);
-    }
-
-} 
-
-@media screen and (min-width: 851px) and (max-width: 1062px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
-    }
-
-    .wrapper {
-        padding: 10% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 25%;
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 45%;
-        margin-bottom: 0.3rem;
-        margin-top: 0.75rem;
-    }
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.0083rem + 1.8957vw, 1.25rem);
-        
-    }
-
-} 
-
-@media screen and (min-width: 638px) and (max-width: 850px) {
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0% 0 60%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
-    .wrapper {
-        padding: 18.5% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 40%;
-        margin-top: 0.3rem;
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem); 
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: flex;
-        justify-content: center;
-        margin-left: -1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1.2rem, 1.2536rem + -0.2679vw, 1.125rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
-    }
-
-} 
-
-@media screen and (min-width: 425px) and (max-width: 637px) {
-
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 45%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
-    .wrapper {
-        padding: 18.5% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 50%;
-        margin-top: 0.75rem;
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1.1rem, 1.0499rem + 0.1887vw, 1.125rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
-    }
-
-} 
-
-@media screen and (min-width: 320px) and (max-width: 424px) {
-
-    * {
-        scroll-padding-top: 3.75em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 0.6750rem + 5.0000vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, -0.8500rem + 10.0000vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(0.9rem, -0.3656rem + 5.6250vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 30%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;  
-    }
-
-    .navLinks ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .navLinks.active {
-        display: flex;
-    }
-
-    .wrapper {
-        padding: 18.5% 10%;
-    }
-
-    .wrapper .about p {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
-    }
-
-    .wrapper .about .main-about-image {
-        inline-size: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .skills .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    }
-
-    .wrapper .skills .grid-container p{
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-    .wrapper .projects .flex-container .project-description {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .wrapper .projects .flex-container .flex-item .project-description a {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .wrapper .projects .flex-container .flex-item .project-hyperlinks a p{
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .wrapper .projects .more-to-come {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.9107rem + 0.4464vw, 1.125rem);
-    }
-    
-    .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
-    }
-
-} 
-
