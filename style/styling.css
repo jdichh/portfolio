@@ -8,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    scroll-padding-top: 4em;
+    scroll-padding-top: 4.5rem;
     margin: 0;
     padding: 0;
     background-color: var(--dark-grey);
@@ -16,91 +16,19 @@
     font-family: 'Outfit', sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-/* mobile toggle button*/
-.toggleButton {
-    display: none;
-    position: absolute;
-    top: 0.9rem;
-    right: calc(3.5rem + 0.390625vw);
-    width: calc(2.5rem + 0.390625vw);
-    height: calc(1.875rem + 0.390625vh);
-    border: 0;
-    /* outline: 1px solid red; */
-}
-
-.logo {
-    font-weight: 600;
-    font-size: 2rem;
-    margin-left: 0.3rem;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    padding: 10px 10%;
-    border-bottom: 1px solid var(--yellow-orange);
-}
-
-.navBar {
-    margin-right: -2.5rem;
-}
-
-.navLinks {
-    list-style: none;
-}
-
-.navLinks[data-visible="true"] {
-    transform: translateX(0%);
-}
-
-.navLinks li {
-    display: inline-block;
-    padding: 0 2.5rem;
-    list-style: none;
-}
-
-.navLinks li a:hover {
-    transition: all 0.5 ease 0s;
-}
-
 .align-items-center {
     align-items: center;
 }
 
-li a, .wrapper p {
-    color: var(--off-white);
-}
-
-.navLinks li a:hover {
-    color: var(--yellow-orange);
-}
-
-h1, 
-h2 {
-    /* h2 == title of project */ 
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-h3 {
-    /* h3 == subtitle of project -> tech used*/ 
-    font-size: 1rem;
-}
-
-li, a {
-    font-size: 1.5rem;
-    text-decoration: none;
+.align-items-flex-end {
+    align-items: flex-end;
 }
 
 h3,
 li,
 a,
 .wrapper p,
-.wrapper .projects .flex-container .project-description,
+.project-description,
 .quotation {
     font-weight: 400;
 }
@@ -121,6 +49,10 @@ a,
     flex-direction: column;
 }
 
+.flex-wrapped {
+    flex-wrap: wrap;
+}
+
 .font-style-italic {
     font-style: italic;
 }
@@ -129,7 +61,7 @@ a,
     height: auto;
 }
 
-.flex-end {
+.justify-content-flex-end {
     justify-content: flex-end;
 }
 
@@ -177,51 +109,102 @@ a,
     text-align: center;
 }
 
-.wrapper {
-    padding: 5.5% 10%;
+.logo {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
 }
 
-.about .about-quote, 
-.project-hyperlinks a p {
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 10%;
+    border-bottom: 1px solid var(--yellow-orange);
+}
+
+.navBar {
+    margin-right: -2.5rem;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0 1.5rem;
+    list-style: none;
+}
+
+.navLinks li a:hover {
+    transition: all 0.5 ease 0s;
+}
+
+
+li a, 
+.wrapper p {
+    color: var(--off-white);
+}
+
+.navLinks li a:hover {
     color: var(--yellow-orange);
 }
 
-/* About Section */
-.main-about-image {
-    margin-right: 1rem;
-    inline-size: 16%;
+h2 {
+    /* title of project */ 
+    font-weight: 600;
+    font-size: 2rem;
 }
 
-.about-text-group {
+h3 {
+    /* tech used in project */ 
+    font-size: 1rem;
+}
+
+li, a {
     font-size: 1.3rem;
-    margin-top: 3rem;
+    text-decoration: none;
+}
+
+.wrapper {
+    padding: 2.5% 10%;
+}
+
+/* Hero Section */
+.hero-section-margin-block{
+    margin-block: 10rem;
     /* outline: 1px solid red; */
 }
 
-.about {
-    margin-bottom: 5rem;
+.my-name {
+    font-size: 3.25rem;
+}
+
+.hero-section p {
+    /* job position */
+    font-size: 1.2rem;
     /* outline: 1px solid red; */
 }
 
-/* .about-hyperlinks {
-    outline: 1px solid red;
-} */
-
-.about-hyperlinks img {
-    margin-top: 2rem;
-    max-width: 50px;
+.hero-section-hyperlinks img {
+    max-width: 45px;
+    /* outline: 1px solid red; */
 }
+
 
 /* Skills Section */
 .skills {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     /* outline: 1px solid red; */
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    margin-bottom: 2.5rem;
     /* outline: 1px solid red; */
 }
 
@@ -235,39 +218,34 @@ a,
     height: 1em;
 }
 
-.grid-item .svg-img-size {
-    font-size: 2.75rem;
+.svg-img-size {
+    font-size: 3rem;
     line-height: 3rem;
 }
 
-.grid-item .svg-font-size{ 
-    font-size: 1.2rem;
+.svg-font-size{ 
+    font-size: 1rem;
  }
 
 /* Projects Section */
 .projects {
-    margin-top: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--yellow-orange);
+    border-bottom: 1px solid var(--yellow-orange);
     /* outline: 1px solid red; */
 }
 
-.flex-container .flex-item {
-    margin-bottom: 3.5rem;
+.project-item {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    outline: 1px solid var(--off-white);
 }
 
-.main-project-image {
-    inline-size: 25%;
-    margin: 0.5rem 1rem 0 0;
-}
-
-.flex-item .project-description{
-    font-size: 1.2rem;
-    margin-top: 0.3rem;
+.project-description{
+    font-size: 1.125rem;
 }
 
 .project-description a {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
 }
 
 .project-hyperlinks a {
@@ -275,18 +253,16 @@ a,
 }
 
 .project-hyperlinks a p {
+    color: var(--yellow-orange);
+    margin-top: 1rem;
     font-size: 1rem;
     padding: 0.75rem;
 }
 
-.more-to-come {
-    font-size: 1rem;
-    margin-top: 10rem;
-}
-
+/* quotation section */
 .quotation {
-    margin-top: 2rem;
-    width: 70%;
+    margin: 2% 22%;
+    /* outline: 1px solid red; */
 }
 
 .quotation p {
@@ -294,634 +270,52 @@ a,
 }
 
 .quotation b {
+    margin-top: 1rem;
     font-size: 1rem;
 }
 
+/* footer section */
 .footer {
-    width: 80%;
-    margin-bottom: 3rem;
-    font-size: 1rem;
+    margin: 3% 15%;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    /* outline: 1px solid red; */
 }
 
-@media (min-width: 1275px) and (max-width: 1487px) {
+/* mobile toggle button*/
+.toggleButton {
+    display: none;
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 1.8rem;
+    border: 0;
+    /* outline: 1px solid red; */
+}
 
-    * {
-        scroll-padding-top: 4em;
-    }
+
+@media (min-width: 590px) and (max-width: 971px) {
     
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
+   * {
+        scroll-padding-top: 4.5em;
     }
 
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
+    header {
+        padding: 2% 7.5%;
     }
 
     .wrapper {
-        padding: 10% 10%;
+        padding: 5% 10%;
     }
 
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
+    .my-name {
+        font-size: clamp(3rem, 2.5462rem + 1.2308vw, 3.2rem);
     }
 
-    .about-text-group {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin: 0;
-        text-align: center;
-        margin-top: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
-    }
-
-    /* projects section */
-    .project-description {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .project-hyperlinks a p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        padding: 1rem;
-    }
-
-    .more-to-come {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.2524rem + 1.8868vw, 1.25rem);
-    }
-
-} 
-
-@media (min-width: 1062px) and (max-width: 1274px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
-    }
-
-    .wrapper {
-        padding: 10% 10%;
-    }
-
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-text-group {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin: 0;
-        text-align: center;
-        /* outline: 1px solid red; */
-    }
-
-    .about p {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
-    }
-
-    /* projects section */
-    .main-project-image {
-        inline-size: 35%;
-        margin-bottom: 0.3rem;
-        margin-top: 0.75rem;
-    }
-
-    .project-description {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-
-    .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .project-hyperlinks a p{
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-        padding: 1rem;
-    }
-
-    .more-to-come {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.188rem, 0.8774rem + 0.4679vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.2524rem + 1.8868vw, 1.25rem);
-    }
-
-} 
-
-@media (min-width: 851px) and (max-width: 1062px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: left;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: left;
-    }
-
-    .wrapper {
-        padding: 10% 10%;
-    }
-
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-text-group {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-        margin: 0;
-        text-align: center;
-        /* outline: 1px solid red; */
-    }
-
-    .about p {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
-    }
-
-    /* projects section */
-    .main-project-image {
-        inline-size: 45%;
-        margin-bottom: 0.3rem;
-        margin-top: 0.75rem;
-    }
-
-    .project-description {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-
-    .project-hyperlinks {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .project-hyperlinks a p{
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .more-to-come {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1.125rem, 0.6209rem + 0.9479vw, 1.25rem);
-    }
-    
-    .footer {
-        width: 80%;
-        font-size: clamp(1rem, -0.0083rem + 1.8957vw, 1.25rem);
-        
-    }
-
-} 
-
-@media (min-width: 638px) and (max-width: 850px) {
-    
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0% 0 60%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .wrapper {
-        padding: 18.5% 10%;
-    }
-
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-text-group {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        margin: 0;
-        text-align: center;
-        /* outline: 1px solid red; */
-    }
-
-    .about p {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
-    }
-
-
-    /* projects section */
-    .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-    .project-description {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem); 
-    }
-
-    .project-hyperlinks {
-        display: flex;
-        justify-content: center;
-        margin-left: -1rem;
-    }
-
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .project-hyperlinks a p{
-        font-size: clamp(1.2rem, 1.2536rem + -0.2679vw, 1.125rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .more-to-come {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
-    }
-
-} 
-
-@media (min-width: 425px) and (max-width: 637px) {
-
-    h1 {
-        font-size: clamp(1.8rem, 1.3792rem + 1.5842vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, 0.5584rem + 3.1683vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 45%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-
-    .navLinks li a {
-        font-size: 1.5rem;
-    }
-
-    .wrapper {
-        padding: 18.5% 10%;
-    }
-
-
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-text-group {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        margin: 0;
-        text-align: left;
-        /* outline: 1px solid red; */
-    }
-
-    .about p {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
-    }
-
-
-    /* projects section */
-    .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-    .project-description {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1.1rem, 1.0474rem + 0.1980vw, 1.125rem);
-    }
-
-    .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
-
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
-    .project-hyperlinks a p{
-        font-size: clamp(1.1rem, 1.0499rem + 0.1887vw, 1.125rem);
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .more-to-come {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation {
-        width: 100%;
-    }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.7370rem + 0.9901vw, 1.125rem);
-    }
-    
-    .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
-    }
-
-} 
-
-@media (min-width: 320px) and (max-width: 424px) {
-
-    * {
-        scroll-padding-top: 4em;
-    }
-    
-    h1 {
-        font-size: clamp(1.8rem, 0.6750rem + 5.0000vw, 2rem);
-    }
-
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, -0.8500rem + 10.0000vw, 1.8rem);
-        text-align: center;
-    }
-
-    /* subtitle of project -> tech used*/
-    h3 {
-        font-size: clamp(0.9rem, -0.3656rem + 5.6250vw, 1.125rem);
-        text-align: center;
-    }
-
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: -2rem;
-    }
-
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 30%;
-        display: flex;
-        padding: min(20vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid var(--yellow-orange);
-    }
-
-    .navLinks li {
-        padding-bottom: 3rem;
-        text-align: right;
-    }
-    
-    .wrapper {
-        padding: 25% 10%;
-    }
-
-    /* about section */
-    .about {
-        margin-bottom: 1rem;
-        /* outline: 1px solid red; */
-    }
-
-    .about-text-group {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-        margin: 0;
-        text-align: left;
-        /* outline: 1px solid red; */
-    }
-
-    .about p {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-hyperlinks img {
-        margin-top: 1rem;
+    .hero-section-hyperlinks img {
+        margin-top: 0.5rem;
+        max-width: 40px;
     }
 
     /* skills section */
@@ -929,20 +323,15 @@ a,
         grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     }
 
-
     /* projects section */
-    .main-project-image {
-        inline-size: 100%;
-        margin-bottom: 0.3rem;
+    .project-item {
+        padding: 0.5rem;
     }
-    
-    .project-description {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
+
+    /* h2=title of project h3=tech used*/
+    h2, 
+    h3 { 
+        text-align: center;
     }
 
     .project-hyperlinks {
@@ -951,37 +340,236 @@ a,
         margin-left: -1rem;
     }
 
-    .project-hyperlinks a {
-        margin-bottom: 1rem;
-    }
-
     .project-hyperlinks a p{
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-        padding: 1rem;
+        margin-bottom: 1px;
         text-align: center;
     }
 
-    .more-to-come {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-    
+    /* quotation section */
     .quotation {
-        width: 100%;
+        margin: 2% 0;
+        /* outline: 1px solid red; */
     }
-    
-    .quotation p {
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-    
-    .quotation b {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 0.6154rem + 1.9231vw, 1.125rem);
-    }
-    
+
+    /* footer section */
     .footer {
-        width: 90%;
-        font-size: clamp(0.8rem, -0.3250rem + 5.0000vw, 1rem);
+        margin: 3% 10%;
     }
 
 } 
 
+@media (min-width: 442px) and (max-width: 589px) {
+
+    * {
+        scroll-padding-top: 4.5em;
+    }
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-top: clamp(0.063rem, -0.363rem + 1.154vw, 0.25rem);
+        margin-right: clamp(0.625rem, -1.63rem + 8.163vw, 1.375rem);
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 60%;
+        display: flex;
+        padding: min(20vh, 10rem) 1rem;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+        border-left: 1px solid var(--yellow-orange);
+    }
+
+    .navLinks li {
+        padding-bottom: 3rem;
+        text-align: right;
+    }
+
+    header {
+        padding: 2% 7.5%;
+    }
+
+    .wrapper {
+        padding: 10% 7.5%;
+    }
+    
+    .my-name {
+        font-size: clamp(2.5rem, 0.9966rem + 5.4422vw, 3rem);
+    }
+    
+    .hero-section p {
+        font-size: clamp(1rem, 0.3986rem + 2.1769vw, 1.2rem);
+        /* outline: 1px solid red; */
+    }
+    
+    .hero-section-hyperlinks img {
+        margin-top: 0.5rem;
+        max-width: 40px;
+    }
+
+    /* skills section */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+
+    /* projects section */
+    .project-item {
+        padding: 0.5rem;
+    }
+
+    /* title of project */
+    h2 { 
+        font-size: clamp(2rem, 0.7973rem + 4.3537vw, 2.4rem);
+        text-align: center;
+    }
+
+    /* tech used*/
+    h3 {
+        font-size: clamp(1rem, 0.8497rem + 0.5442vw, 1.05rem);
+        text-align: center;
+    }
+    
+    .project-description {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-description a {
+        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    }
+
+    .project-hyperlinks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -1rem;
+    }
+
+    .project-hyperlinks a p{
+        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+        padding: 1rem;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    /* quotation section */
+    .quotation {
+        margin: 2% 0;
+        /* outline: 1px solid red; */
+    }
+
+} 
+
+@media (min-width: 320px) and (max-width: 441px) {
+
+    * {
+        scroll-padding-top: 3.5em;
+    }
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-top: -3px;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 50%;
+        display: flex;
+        padding: min(20vh, 10rem) 1rem;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+        border-left: 1px solid var(--yellow-orange);
+    }
+
+    .navLinks li {
+        padding-bottom: 3rem;
+        text-align: right;
+    }
+
+    header {
+        padding: 2.5% 7.5%;
+    }
+
+    .wrapper {
+        padding: 15% 7.5%;
+    }
+    
+    .my-name {
+        font-size: clamp(1.7rem, -0.4157rem + 10.5785vw, 2.5rem);
+    }
+    
+    .hero-section p {
+        font-size: clamp(0.85rem, 0.4566rem + 1.9672vw, 1rem);
+        /* outline: 1px solid red; */
+    }
+    
+    .hero-section-hyperlinks img {
+        margin-top: 0.5rem;
+        max-width: 40px;
+    }
+
+    /* skills section */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+
+    /* projects section */
+    .project-item {
+        padding: 0.5rem;
+    }
+
+
+    /* title of project */
+    h2 { 
+        font-size: clamp(1.4rem, -0.1738rem + 7.8689vw, 2rem);
+        text-align: center;
+    }
+
+    /* tech used*/
+    h3 {
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+        text-align: center;
+    }
+    
+    .project-description {
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+        margin-bottom: 1rem;
+        margin-inline: 0.1rem;
+    }
+    
+    .project-description a {
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    }
+    .project-hyperlinks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -1rem;
+    }
+
+    .project-hyperlinks a p{
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+        padding: 1rem;
+        margin-bottom: 0.1rem;
+        margin-inline: 0.1rem;
+        text-align: center;
+    }
+
+    /* quotation section */
+    .quotation {
+        margin: 2% 0;
+        /* outline: 1px solid red; */
+    }
+
+    .quotation p {
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    }
+
+    .quotation b {
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+        margin-top: 1rem;
+    }
+
+} 
