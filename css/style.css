@@ -11,7 +11,7 @@
     padding: 0;
     background-color: var(--dark-blue);
     scroll-behavior: smooth;
-    font-family: 'Satoshi-Variable';
+    font-family: 'Satoshi-Variable', sans-serif;
 }
 
 .align-items-flex-start {
