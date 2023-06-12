@@ -1,0 +1,102 @@
+@media (min-width: 442px) and (max-width: 589px) {
+
+    * {
+        scroll-padding-top: 4.5em;
+    }
+
+    .toggleButton {
+        display: flex;
+        z-index: 9999;
+        margin-top: clamp(0.063rem, -0.363rem + 1.154vw, 0.25rem);
+        margin-right: clamp(0.625rem, -1.63rem + 8.163vw, 1.375rem);
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0 0 0 60%;
+        display: flex;
+        padding: min(20vh, 10rem) 1rem;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 150ms ease-out;
+        border-left: 1px solid var(--sonic-blue);
+    }
+
+    .navLinks li {
+        padding-bottom: 3rem;
+        text-align: right;
+    }
+
+    header {
+        padding: 2% 7.5%;
+    }
+
+    .wrapper {
+        padding: 10% 7.5%;
+    }
+    
+    .my-name {
+        font-size: clamp(2.5rem, 0.9966rem + 5.4422vw, 3rem);
+    }
+    
+    .job-position {
+        font-size: clamp(1rem, 0.3986rem + 2.1769vw, 1.2rem);
+        /* outline: 1px solid red; */
+    }
+    
+    .hero-section-hyperlinks img {
+        margin-top: 0.5rem;
+        max-width: 40px;
+    }
+
+    /* skills section */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    }
+
+    /* projects section */
+    .project-item {
+        padding: 0.5rem;
+    }
+
+    /* title of project */
+    h2 { 
+        font-size: clamp(2rem, 0.7973rem + 4.3537vw, 2.4rem);
+        text-align: center;
+    }
+
+    /* tech used*/
+    h3 {
+        font-size: clamp(1rem, 0.8497rem + 0.5442vw, 1.05rem);
+        text-align: center;
+    }
+    
+    .project-description {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-description a {
+        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    }
+
+    .project-hyperlinks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -1rem;
+    }
+
+    .project-hyperlinks a p{
+        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+        padding: 1rem;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    /* quotation section */
+    .quotation {
+        margin: 2% 0;
+        /* outline: 1px solid red; */
+    }
+
+} 
