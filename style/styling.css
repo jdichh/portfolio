@@ -218,6 +218,7 @@ li, a {
 .grid-item {
     padding: 1rem;
     margin: 0.3em;
+    outline: 1px solid var(--sonic-blue)
  }
 
 .grid-item svg {
@@ -244,7 +245,7 @@ li, a {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    outline: 1px solid var(--off-white);
+    outline: 1px solid var(--sonic-blue)
 }
 
 .project-description{
@@ -257,13 +258,15 @@ li, a {
 
 .project-hyperlinks a {
     margin-left: 1rem;
+  
 }
 
 .project-hyperlinks a p {
-    color: var(--sonic-blue);
+    background-color: var(--sonic-blue);
+    color: var(--black); 
     margin-top: 1rem;
-    font-size: 1rem;
-    padding: 0.75rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
 }
 
 /* quotation section */
