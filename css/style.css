@@ -338,9 +338,9 @@ li, a {
 
     .navLinks {
         position: fixed;
-        inset: 0 0 0 50%;
+        inset: 0 0 0 65%;
         display: flex;
-        padding: min(20vh, 10rem) 1rem;
+        padding: min(15vh, 10rem) 1rem;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 150ms ease-out;
@@ -348,7 +348,7 @@ li, a {
     }
 
     .navLinks li {
-        padding-bottom: 3rem;
+        padding-bottom: 1.25rem;
         text-align: right;
     }
 
@@ -424,7 +424,7 @@ li, a {
         position: fixed;
         inset: 0 0 0 60%;
         display: flex;
-        padding: min(20vh, 10rem) 1rem;
+        padding: min(15vh, 10rem) 1rem;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 150ms ease-out;
@@ -432,7 +432,7 @@ li, a {
     }
 
     .navLinks li {
-        padding-bottom: 3rem;
+        padding-bottom: 1.25rem;
         text-align: right;
     }
 
@@ -533,7 +533,7 @@ li, a {
         position: fixed;
         inset: 0 0 0 50%;
         display: flex;
-        padding: min(20vh, 10rem) 1rem;
+        padding: min(15vh, 10rem) 1rem;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 150ms ease-out;
@@ -541,7 +541,7 @@ li, a {
     }
 
     .navLinks li {
-        padding-bottom: 3rem;
+        padding-bottom: 1.25rem;
         text-align: right;
     }
 
