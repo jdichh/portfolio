@@ -202,7 +202,8 @@ li, a {
 
 .hero-section-hyperlinks img {
     margin-top: 0.5rem;
-    max-width: 45px;
+    width: 45px;
+    height: 45px;
     /* outline: 1px solid red; */
 }
 
