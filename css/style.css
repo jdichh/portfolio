@@ -215,15 +215,15 @@ li, a {
 }
 
 /* about section */
-.about-section-text {
+/* .about-section-text {
     margin-bottom: 2rem;
-    /* outline: 1px solid red; */
+    
 }
 
 .about-section-text p {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
-}
+} */
 
 /* Skills Section */
 .skills {
@@ -332,9 +332,9 @@ li, a {
          scroll-padding-top: 4.5em;
      }
 
-    .about-section-text p {
+    /* .about-section-text p {
         margin-bottom: 1rem;
-    }
+    } */
 
     header {
         padding: 2% 7.5%;
@@ -439,10 +439,10 @@ li, a {
     }
 
     /* about section */
-    .about-section-text p {
+    /* .about-section-text p {
         font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
         margin-bottom: 1rem;
-    }
+    } */
 
     /* skills section */
     .grid-container {
@@ -550,10 +550,10 @@ li, a {
     }
 
     /* about section */
-    .about-section-text p {
+    /* .about-section-text p {
         font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
         margin-bottom: 0.5rem;
-    }
+    } */
 
     /* skills section */
     .grid-container {
