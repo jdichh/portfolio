@@ -352,8 +352,6 @@ li, a {
         margin-top: 0.5rem;
     }
 
-
-
     /* projects section */
     .project-item {
         padding: 0.5rem;
@@ -436,7 +434,7 @@ li, a {
     
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
-        height: auto;
+        height: 40px;
         width: 40px;
     }
 
@@ -547,7 +545,7 @@ li, a {
     
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
-        height: auto;
+        height: 35px;
         width: 35px;
     }
 
