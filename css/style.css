@@ -326,7 +326,7 @@ li, a {
     /* outline: 1px solid red; */
 }
 
-@media (min-width: 590px) and (max-width: 971px) {
+@media (min-width: 600px) and (max-width: 971px) {
     
     * {
          scroll-padding-top: 4.5em;
@@ -351,6 +351,8 @@ li, a {
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
     }
+
+
 
     /* projects section */
     .project-item {
@@ -387,7 +389,7 @@ li, a {
  
  } 
 
-@media (min-width: 442px) and (max-width: 589px) {
+@media (min-width: 442px) and (max-width: 599px) {
 
     * {
         scroll-padding-top: 4.5em;
@@ -446,7 +448,7 @@ li, a {
 
     /* skills section */
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
     /* projects section */
