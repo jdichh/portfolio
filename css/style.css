@@ -350,7 +350,6 @@ li, a {
 
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
-        max-width: 40px;
     }
 
     /* projects section */
@@ -435,7 +434,8 @@ li, a {
     
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
-        max-width: 40px;
+        height: auto;
+        width: 40px;
     }
 
     /* about section */
@@ -545,7 +545,8 @@ li, a {
     
     .hero-section-hyperlinks img {
         margin-top: 0.5rem;
-        max-width: 40px;
+        height: auto;
+        width: 35px;
     }
 
     /* about section */
