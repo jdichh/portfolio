@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
 
 :root {
     --dark-blue: #131217;
@@ -123,7 +123,7 @@ a,
 }
 
 .logo {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.4rem;
     margin-left: 0.3rem;
 }
@@ -168,7 +168,7 @@ li a,
 
 h2 {
     /* title of project */ 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2rem;
 }
 
@@ -564,7 +564,6 @@ li, a {
     .project-item {
         padding: 0.5rem;
     }
-
 
     /* title of project */
     h2 { 
