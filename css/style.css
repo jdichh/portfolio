@@ -337,7 +337,7 @@ li, a {
     /* outline: 1px solid red; */
 }
 
-@media (min-width: 600px) and (max-width: 971px) {
+@media (min-width: 37.5em) and (max-width: 60.6875em) {
     
     * {
          scroll-padding-top: 4.5em;
@@ -398,7 +398,7 @@ li, a {
  
  } 
 
-@media (min-width: 442px) and (max-width: 599px) {
+@media (min-width: 27.625em) and (max-width: 37.4375em) {
 
     * {
         scroll-padding-top: 4.5em;
@@ -507,7 +507,7 @@ li, a {
 
 } 
 
-@media (min-width: 320px) and (max-width: 441px) {
+@media (min-width: 20em) and (max-width: 27.5625em) {
 
     * {
         scroll-padding-top: 3.5em;
@@ -546,7 +546,7 @@ li, a {
     
     /* hero section */
     .my-name {
-        font-size: clamp(1.7rem, -0.4157rem + 10.5785vw, 2.5rem);
+        font-size: clamp(2rem, 0.6777rem + 6.6116vw, 2.5rem);
     }
     
     .job-position {
