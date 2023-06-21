@@ -191,8 +191,8 @@ li, a {
 }
 
 /* Hero Section */
-.hero-section-margin-block{
-    margin-block: 7.5rem;
+.hero-section {
+    height: 100svh;
     /* outline: 1px solid red; */
 }
 
