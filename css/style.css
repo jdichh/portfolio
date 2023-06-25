@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url(/fonts/SpaceGrotesk-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
 
 :root {
     --dark-blue: #131217;
