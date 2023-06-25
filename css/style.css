@@ -211,7 +211,7 @@ li, a {
 
 .job-position {
     /* job position */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     /* outline: 1px solid red; */
 }
 
@@ -228,15 +228,15 @@ li, a {
 }
 
 /* about section */
-/* .about-section-text {
+.about {
     margin-bottom: 2rem;
     
 }
 
-.about-section-text p {
+.about p {
     font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-} */
+    margin-bottom: 0.5rem;
+}
 
 /* tools Section */
 .tools {
@@ -297,7 +297,6 @@ li, a {
 
 .project-hyperlinks a {
     margin-left: 1rem;
-  
 }
 
 .project-hyperlinks a p {
@@ -349,7 +348,7 @@ li, a {
          scroll-padding-top: 4.5em;
      }
 
-    /* .about-section-text p {
+    /* .about p {
         margin-bottom: 1rem;
     } */
 
@@ -456,10 +455,10 @@ li, a {
     }
 
     /* about section */
-    /* .about-section-text p {
+    .about p {
         font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
         margin-bottom: 1rem;
-    } */
+    }
 
     /* skills section */
     .grid-container {
@@ -473,7 +472,6 @@ li, a {
 
     /* title of project */
     h2 { 
-        font-size: clamp(2rem, 0.7973rem + 4.3537vw, 2.4rem);
         text-align: center;
     }
 
@@ -567,10 +565,10 @@ li, a {
     }
 
     /* about section */
-    /* .about-section-text p {
+    .about p {
         font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
         margin-bottom: 0.5rem;
-    } */
+    }
 
     /* skills section */
     .grid-container {
