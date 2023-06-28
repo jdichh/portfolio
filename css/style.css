@@ -258,10 +258,6 @@ li, a {
     height: 1em;
 }
 
-.grid-item svg:hover path {
-    fill: var(--sonic-blue);
-  }
-
 .svg-img-size {
     font-size: 3rem;
     line-height: 3rem;
