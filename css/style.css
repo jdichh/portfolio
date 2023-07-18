@@ -609,12 +609,12 @@ li, a {
     }
 
     .quotation p {
+        margin-top: 1rem;
         font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
     }
 
     .quotation b {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-        margin-top: 1rem;
+        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);  
     }
 
 } 
