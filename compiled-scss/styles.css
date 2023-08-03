@@ -182,6 +182,130 @@ li, a {
   padding: 2.5% 10%;
 }
 
+.hero-section-margin-block {
+  margin-block: 7.5rem;
+  /* outline: 1px solid red; */
+}
+
+.my-name {
+  font-size: 3.25rem;
+}
+
+.job-position {
+  /* job position */
+  font-size: 1.3rem;
+  /* outline: 1px solid red; */
+}
+
+.hero-section-hyperlinks img {
+  margin-top: 0.5rem;
+  width: 45px;
+  height: 45px;
+  /* outline: 1px solid red; */
+}
+
+.hero-section-hyperlinks img:hover {
+  background-color: #6e99c4;
+  /* outline: 1px solid red; */
+}
+
+.about {
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tools {
+  margin-bottom: 2rem;
+  /* outline: 1px solid red; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  margin-bottom: 2rem;
+  /* outline: 1px solid red; */
+}
+
+.grid-item {
+  padding-block: 2rem;
+  margin: 0.3em;
+  outline: 1px solid #6e99c4;
+}
+
+.grid-item svg {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-img-size {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.svg-font-size {
+  font-size: 1rem;
+}
+
+/* quotation section */
+.quotation {
+  margin-top: 2%;
+  max-width: 900px;
+  /* outline: 1px solid red; */
+}
+
+.quotation p {
+  font-size: 1rem;
+}
+
+.quotation b {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* footer section */
+.footer {
+  margin: 3% 15%;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  /* outline: 1px solid red; */
+}
+
+.projects {
+  border-bottom: 2px solid #6e99c4;
+  /* outline: 1px solid red; */
+}
+
+.project-item {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  outline: 1px solid #6e99c4;
+}
+
+.project-description {
+  font-size: 1.125rem;
+}
+
+.project-description a {
+  font-size: 1.125rem;
+}
+
+.project-hyperlinks a {
+  margin-left: 1rem;
+}
+
+.project-hyperlinks a p {
+  background-color: #6e99c4;
+  color: #131217;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
 /* mobile toggle button*/
 .toggleButton {
   display: none;
@@ -426,127 +550,4 @@ li, a {
   .quotation b {
     font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
   }
-}
-.hero-section-margin-block {
-  margin-block: 7.5rem;
-  /* outline: 1px solid red; */
-}
-
-.my-name {
-  font-size: 3.25rem;
-}
-
-.job-position {
-  /* job position */
-  font-size: 1.3rem;
-  /* outline: 1px solid red; */
-}
-
-.hero-section-hyperlinks img {
-  margin-top: 0.5rem;
-  width: 45px;
-  height: 45px;
-  /* outline: 1px solid red; */
-}
-
-.hero-section-hyperlinks img:hover {
-  background-color: #6e99c4;
-  /* outline: 1px solid red; */
-}
-
-.about {
-  margin-bottom: 2rem;
-}
-
-.about p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.tools {
-  margin-bottom: 2rem;
-  /* outline: 1px solid red; */
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  margin-bottom: 2rem;
-  /* outline: 1px solid red; */
-}
-
-.grid-item {
-  padding-block: 2rem;
-  margin: 0.3em;
-  outline: 1px solid #6e99c4;
-}
-
-.grid-item svg {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-img-size {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-.svg-font-size {
-  font-size: 1rem;
-}
-
-/* quotation section */
-.quotation {
-  margin-top: 2%;
-  max-width: 900px;
-  /* outline: 1px solid red; */
-}
-
-.quotation p {
-  font-size: 1rem;
-}
-
-.quotation b {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-/* footer section */
-.footer {
-  margin: 3% 15%;
-  margin-bottom: 1rem;
-  font-size: 0.75rem;
-  /* outline: 1px solid red; */
-}
-
-.projects {
-  border-bottom: 2px solid #6e99c4;
-  /* outline: 1px solid red; */
-}
-
-.project-item {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  outline: 1px solid #6e99c4;
-}
-
-.project-description {
-  font-size: 1.125rem;
-}
-
-.project-description a {
-  font-size: 1.125rem;
-}
-
-.project-hyperlinks a {
-  margin-left: 1rem;
-}
-
-.project-hyperlinks a p {
-  background-color: #6e99c4;
-  color: #131217;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  padding: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
