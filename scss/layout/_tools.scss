@@ -1,0 +1,33 @@
+@use '../global/colors';
+
+.tools {
+    margin-bottom: 2rem;
+    /* outline: 1px solid red; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    margin-bottom: 2rem;
+    /* outline: 1px solid red; */
+}
+
+.grid-item {
+    padding-block: 2rem;
+    margin: 0.3em;
+    outline: 1px solid colors.$sonic-blue;
+ }
+
+.grid-item svg {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-img-size {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.svg-font-size{ 
+    font-size: 1rem;
+ }

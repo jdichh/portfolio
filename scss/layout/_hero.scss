@@ -1,0 +1,28 @@
+@use '../global/colors';
+
+.hero-section-margin-block{
+    margin-block: 7.5rem;
+    /* outline: 1px solid red; */
+}
+
+.my-name {
+    font-size: 3.25rem;
+}
+
+.job-position {
+    /* job position */
+    font-size: 1.3rem;
+    /* outline: 1px solid red; */
+}
+
+.hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+    width: 45px;
+    height: 45px;
+    /* outline: 1px solid red; */
+}
+
+.hero-section-hyperlinks img:hover {
+    background-color: colors.$sonic-blue;
+    /* outline: 1px solid red; */
+}

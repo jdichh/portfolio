@@ -1,0 +1,33 @@
+@use '../global/colors';
+
+.projects {
+    border-bottom: 2px solid colors.$sonic-blue;
+    /* outline: 1px solid red; */
+}
+
+.project-item {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    outline: 1px solid colors.$sonic-blue
+}
+
+.project-description{
+    font-size: 1.125rem;
+}
+
+.project-description a {
+    font-size: 1.125rem;
+}
+
+.project-hyperlinks a {
+    margin-left: 1rem;
+}
+
+.project-hyperlinks a p {
+    background-color: colors.$sonic-blue;
+    color: colors.$dark-blue; 
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}

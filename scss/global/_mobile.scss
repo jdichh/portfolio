@@ -1,322 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
-
-:root {
-    --dark-blue: #131217;
-    --off-white: #dadada;
-    --sonic-blue: #6e99c4;
-}
-
-* {
-    box-sizing: border-box;
-    scroll-padding-top: 4.5rem;
-    margin: 0;
-    padding: 0;
-    background-color: var(--dark-blue);
-    scroll-behavior: smooth;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.align-items-flex-start {
-    align-items: flex-start;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.align-items-flex-end {
-    align-items: flex-end;
-}
-
-h3,
-li,
-a,
-.wrapper p,
-.project-description,
-.quotation {
-    font-weight: 400;
-}
-
-.block-size-auto {
-    block-size: auto;
-}
-
-.float-left-img {
-    float: left;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-direction-column {
-    flex-direction: column;
-}
-
-.flex-not-wrapped {
-    flex-wrap: nowrap;
-}
-
-.flex-wrapped {
-    flex-wrap: wrap;
-}
-
-.font-style-italic {
-    font-style: italic;
-}
-
-.height-auto {
-    height: auto;
-}
-
-.justify-content-flex-start {
-    justify-content: flex-start;
-}
-
-.justify-content-flex-end {
-    justify-content: flex-end;
-}
-
-.justify-content-space-between {
-    justify-content: space-between;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.margin-left-auto {
-    margin-left: auto;
-}
-
-.margin-right-auto {
-    margin-right: auto;
-}
-
-.offwhite-outline {
-    outline: 1px solid var(--off-white)
-}
-
-.sonicblue-outline {
-    outline: 1px solid var(--sonic-blue);
-}
-
-.text-color-off-white {
-    color: var(--off-white);
-    
-}
-
-.text-color-sonic-blue {
-    color: var(--sonic-blue);
-}
-
-.text-align-left {
-    text-align: left;
-}
-
-.text-align-right {
-    text-align: right;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.logo {
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-left: 0.3rem;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    padding: 1rem 10%;
-    border-bottom: 2px solid var(--sonic-blue);
-}
-
-.navBar {
-    margin-right: -1.5rem;
-}
-
-.navLinks {
-    list-style: none;
-}
-
-.navLinks[data-visible="true"] {
-    transform: translateX(0%);
-}
-
-.navLinks li {
-    display: inline-block;
-    padding: 0 1.5rem;
-    list-style: none;
-}
-
-.navLinks li a:hover {
-    transition: all 0.5 ease 0s;
-}
-
-li a, 
-.wrapper p {
-    color: var(--off-white);
-}
-
-.navLinks li a:hover {
-    color: var(--sonic-blue);
-}
-
-h1,
-h2 {
-    font-weight: 400;
-}
-
-h2 {
-    /* title of project */ 
-    font-size: 2rem;
-}
-
-h3 {
-    /* tech used in project */ 
-    font-size: 1rem;
-}
-
-li, a {
-    font-size: 1.3rem;
-    text-decoration: none;
-}
-
-.wrapper {
-    padding: 2.5% 10%;
-}
-
-/* Hero Section */
-.hero-section-margin-block{
-    margin-block: 7.5rem;
-    /* outline: 1px solid red; */
-}
-
-.my-name {
-    font-size: 3.25rem;
-}
-
-.job-position {
-    /* job position */
-    font-size: 1.3rem;
-    /* outline: 1px solid red; */
-}
-
-.hero-section-hyperlinks img {
-    margin-top: 0.5rem;
-    width: 45px;
-    height: 45px;
-    /* outline: 1px solid red; */
-}
-
-.hero-section-hyperlinks img:hover {
-    background-color: var(--sonic-blue);
-    /* outline: 1px solid red; */
-}
-
-/* about section */
-.about {
-    margin-bottom: 2rem;
-    
-}
-
-.about p {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* tools Section */
-.tools {
-    margin-bottom: 2rem;
-    /* outline: 1px solid red; */
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    margin-bottom: 2rem;
-    /* outline: 1px solid red; */
-}
-
-.grid-item {
-    padding-block: 2rem;
-    margin: 0.3em;
-    outline: 1px solid var(--sonic-blue)
- }
-
-.grid-item svg {
-    width: 1em;
-    height: 1em;
-}
-
-.svg-img-size {
-    font-size: 3rem;
-    line-height: 3rem;
-}
-
-.svg-font-size{ 
-    font-size: 1rem;
- }
-
-/* Projects Section */
-.projects {
-    border-bottom: 2px solid var(--sonic-blue);
-    /* outline: 1px solid red; */
-}
-
-.project-item {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    outline: 1px solid var(--sonic-blue)
-}
-
-.project-description{
-    font-size: 1.125rem;
-}
-
-.project-description a {
-    font-size: 1.125rem;
-}
-
-.project-hyperlinks a {
-    margin-left: 1rem;
-}
-
-.project-hyperlinks a p {
-    background-color: var(--sonic-blue);
-    color: var(--dark-blue); 
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    padding: 0.5rem;
-}
-
-/* quotation section */
-.quotation {
-    margin: 2% 22%;
-    /* outline: 1px solid red; */
-}
-
-.quotation p {
-    font-size: 1rem;
-}
-
-.quotation b {
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-/* footer section */
-.footer {
-    margin: 3% 15%;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
-    /* outline: 1px solid red; */
-}
+@use './colors';
 
 /* mobile toggle button*/
 .toggleButton {
@@ -330,7 +12,7 @@ li, a {
     /* outline: 1px solid red; */
 }
 
-@media (min-width: 37.5em) and (max-width: 60.6875em) {
+@media (min-width: 600px) and (max-width: 971px) {
     
     * {
          scroll-padding-top: 4.5em;
@@ -391,7 +73,7 @@ li, a {
  
  } 
 
-@media (min-width: 27.625em) and (max-width: 37.4375em) {
+@media (min-width: 442px) and (max-width: 599px) {
 
     * {
         scroll-padding-top: 4.5em;
@@ -411,7 +93,7 @@ li, a {
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 150ms ease-out;
-        border-left: 1px solid var(--sonic-blue);
+        border-left: 1px solid colors.$sonic-blue;
     }
 
     .navLinks li {
@@ -499,7 +181,7 @@ li, a {
 
 } 
 
-@media (min-width: 20em) and (max-width: 27.5625em) {
+@media (min-width: 320px) and (max-width: 441px) {
 
     * {
         scroll-padding-top: 3.5em;
@@ -520,7 +202,7 @@ li, a {
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 150ms ease-out;
-        border-left: 1px solid var(--sonic-blue);
+        border-left: 1px solid colors.$sonic-blue;
     }
 
     .navLinks li {
