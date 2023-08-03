@@ -238,6 +238,7 @@ li, a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    margin-bottom: 2rem;
     /* outline: 1px solid red; */
 }
 
