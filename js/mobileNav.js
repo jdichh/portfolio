@@ -15,9 +15,14 @@ toggleButton.addEventListener("click", () => {
   toggleNavbar(visibility);
 });
 
-// add event listener to each link
+// closes navbar when an anchor is clicked
 links.forEach((link) => {
   link.addEventListener("click", () => {
     toggleNavbar("false");
   });
+});
+
+// closes navbar when the dimmed background is clicked
+dimmedBackground.addEventListener("click", () => {
+  toggleNavbar("false");
 });
