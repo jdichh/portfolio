@@ -10,6 +10,12 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
+.centered-on-screen {
+    width: 100%;
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
 .align-items-flex-start {
     align-items: flex-start;
 }
