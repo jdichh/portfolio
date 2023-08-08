@@ -309,6 +309,10 @@ li, a {
   padding: 0.5rem;
 }
 
+.mini-project-container {
+  margin-top: 4rem;
+}
+
 /* mobile toggle button*/
 .toggleButton {
   display: none;
