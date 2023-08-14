@@ -122,7 +122,6 @@ a,
 }
 
 .logo {
-  font-weight: 600;
   font-size: 1.4rem;
   margin-left: 0.3rem;
 }
@@ -171,12 +170,10 @@ h2 {
 }
 
 h2 {
-  /* title of project */
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  /* tech used in project */
   font-size: 1rem;
 }
 
