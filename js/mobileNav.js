@@ -7,11 +7,13 @@ function toggleNavbar(visibility) {
   navLinks.setAttribute("data-visible", visibility);
   toggleButton.setAttribute("aria-expanded", visibility);
   dimmedBackground.style.display = visibility === "true" ? "block" : "none"; // show or hide the dimmed background
+  if (visibility == "false") {
+    toggleButton.classList.remove('opened');
+  }
 }
 
 toggleButton.addEventListener("click", () => {
-  const visibility =
-    navLinks.getAttribute("data-visible") === "false" ? "true" : "false";
+  const visibility = navLinks.getAttribute("data-visible") === "false" ? "true" : "false";
   toggleNavbar(visibility);
 });
 
