@@ -1,316 +1,298 @@
-@use '../global/colors';
+@use "../global/colors";
 
 /* mobile toggle button*/
 .toggleButton {
-    display: none;
-    position: absolute;
-    top: 0.9rem;
-    right: 1rem;
-    width: 2.5rem;
-    height: 1.8rem;
-    border: 0;
-    /* outline: 1px solid red; */
+  display: none;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 1.8rem;
+  border: 0;
+  /* outline: 1px solid red; */
 }
 
 .dimmedBackground {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
 }
 
 @media (min-width: 600px) and (max-width: 971px) {
-    
-    * {
-         scroll-padding-top: 4.5em;
-     }
+  * {
+    scroll-padding-top: 4.5em;
+  }
 
-    /* .about p {
+  /* .about p {
         margin-bottom: 1rem;
     } */
 
-    header {
-        padding: 2% 7.5%;
-    }
- 
-    .wrapper {
-        padding: 5% 7.5%;
-    }
+  header {
+    padding: 2% 7.5%;
+  }
 
-    .my-name {
-        font-size: clamp(3rem, 2.5462rem + 1.2308vw, 3.2rem);
-    }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
 
-    .hero-section-hyperlinks img {
-        margin-top: 0.5rem;
-    }
+  .my-name {
+    font-size: clamp(3rem, 2.5462rem + 1.2308vw, 3.2rem);
+  }
 
-    /* projects section */
-    .project-item {
-        padding: 0.5rem;
-    }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+  }
 
-    /* h2=title of project h3=tech used*/
-    h2, 
-    h3 { 
-        text-align: center;
-    }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
 
-    .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
+  /* h2=title of project h3=tech used*/
+  h2,
+  h3 {
+    text-align: center;
+  }
 
-    .project-hyperlinks a p{
-        margin-bottom: 1px;
-        text-align: center;
-    }
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
 
-    /* quotation section */
-    .quotation {
-        margin: 2% 0;
-        /* outline: 1px solid red; */
-    }
+  .project-hyperlinks a p {
+    margin-bottom: 1px;
+    text-align: center;
+  }
 
-    /* footer section */
-    .footer {
-        margin: 3% 10%;
-    }
- 
- } 
+  /* quotation section */
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    /* outline: 1px solid red; */
+  }
+}
 
 @media (min-width: 442px) and (max-width: 599px) {
+  * {
+    scroll-padding-top: 4.5em;
+  }
 
-    * {
-        scroll-padding-top: 4.5em;
-    }
+  .toggleButton {
+    display: flex;
+    z-index: 9999;
+    margin-right: clamp(0.688rem, -1.38rem + 7.483vw, 1.375rem);
+  }
 
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-right: clamp(0.688rem, -1.38rem + 7.483vw, 1.375rem);
-    }
+  .navLinks {
+    position: fixed;
+    inset: 0 0 0 60%;
+    display: flex;
+    padding: min(15vh, 10rem) 1rem;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 150ms ease-out;
+    border-left: 1px solid colors.$sonic-blue;
+  }
 
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 60%;
-        display: flex;
-        padding: min(15vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid colors.$sonic-blue;
-    }
+  .navLinks li {
+    padding-bottom: 1.25rem;
+    text-align: right;
+  }
 
-    .navLinks li {
-        padding-bottom: 1.25rem;
-        text-align: right;
-    }
+  header {
+    padding: 2.5% 7.5%;
+  }
 
-    header {
-        padding: 2.5% 7.5%;
-    }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
 
-    .wrapper {
-        padding: 10% 7.5%;
-    }
-    
-    .my-name {
-        font-size: clamp(2.5rem, 0.9966rem + 5.4422vw, 3rem);
-    }
-    
-    .job-position {
-        font-size: clamp(1rem, 0.3986rem + 2.1769vw, 1.2rem);
-        /* outline: 1px solid red; */
-    }
-    
-    .hero-section-hyperlinks img {
-        margin-top: 0.5rem;
-        height: 40px;
-        width: 40px;
-    }
+  .my-name {
+    font-size: clamp(2.5rem, 0.9966rem + 5.4422vw, 3rem);
+  }
 
-    /* about section */
-    .about p {
-        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
-        margin-bottom: 1rem;
-    }
+  .job-position {
+    font-size: clamp(1rem, 0.3986rem + 2.1769vw, 1.2rem);
+    /* outline: 1px solid red; */
+  }
 
-    /* skills section */
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
 
-    /* projects section */
-    .project-item {
-        padding: 0.5rem;
-    }
+  /* about section */
+  .about p {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    margin-bottom: 1rem;
+  }
 
-    /* title of project */
-    h2 { 
-        text-align: center;
-    }
+  /* skills section */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 
-    /* tech used*/
-    h3 {
-        font-size: clamp(1rem, 0.8497rem + 0.5442vw, 1.05rem);
-        text-align: center;
-    }
-    
-    .project-description {
-        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
-        margin-bottom: 1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
-    }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
 
-    .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
+  /* title of project */
+  h2 {
+    text-align: center;
+  }
 
-    .project-hyperlinks a p{
-        font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
-        padding: 1rem;
-        margin-bottom: 1px;
-        text-align: center;
-    }
+  /* tech used*/
+  h3 {
+    font-size: clamp(1rem, 0.8497rem + 0.5442vw, 1.05rem);
+    text-align: center;
+  }
 
-    /* quotation section */
-    .quotation {
-        margin: 2% 0;
-        /* outline: 1px solid red; */
-    }
+  .project-description {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    margin-bottom: 1rem;
+  }
 
-} 
+  .project-description a {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+  }
+
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
+
+  .project-hyperlinks a p {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    padding: 1rem;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+
+  /* quotation section */
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    /* outline: 1px solid red; */
+  }
+}
 
 @media (min-width: 320px) and (max-width: 441px) {
+  * {
+    scroll-padding-top: 3.5em;
+  }
 
-    * {
-        scroll-padding-top: 3.5em;
-    }
+  .toggleButton {
+    display: flex;
+    z-index: 9999;
+    margin-top: -2.5px;
+    margin-right: clamp(0rem, -1.653rem + 8.264vw, 0.625rem);
+  }
 
-    .toggleButton {
-        display: flex;
-        z-index: 9999;
-        margin-top: -2.5px;
-        margin-right: clamp(0rem, -1.653rem + 8.264vw, 0.625rem);
-    }
+  .navLinks {
+    position: fixed;
+    inset: 0 0 0 50%;
+    display: flex;
+    padding: min(15vh, 10rem) 1rem;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 150ms ease-out;
+    border-left: 1px solid colors.$sonic-blue;
+  }
 
-    .navLinks {
-        position: fixed;
-        inset: 0 0 0 50%;
-        display: flex;
-        padding: min(15vh, 10rem) 1rem;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 150ms ease-out;
-        border-left: 1px solid colors.$sonic-blue;
-    }
+  .navLinks li {
+    padding-bottom: 1.25rem;
+    text-align: right;
+  }
 
-    .navLinks li {
-        padding-bottom: 1.25rem;
-        text-align: right;
-    }
+  header {
+    padding: 2.5% 7.5%;
+  }
 
-    header {
-        padding: 2.5% 7.5%;
-    }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
 
-    .wrapper {
-        padding: 15% 7.5%;
-    }
-    
-    /* hero section */
-    .my-name {
-        font-size: clamp(2rem, 0.6777rem + 6.6116vw, 2.5rem);
-    }
-    
-    .job-position {
-        font-size: clamp(0.85rem, 0.4566rem + 1.9672vw, 1rem);
-        /* outline: 1px solid red; */
-    }
-    
-    .hero-section-hyperlinks img {
-        margin-top: 0.5rem;
-        height: 35px;
-        width: 35px;
-    }
+  /* hero section */
+  .my-name {
+    font-size: clamp(2rem, 0.6777rem + 6.6116vw, 2.5rem);
+  }
 
-    /* about section */
-    .about p {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-        margin-bottom: 0.5rem;
-    }
+  .job-position {
+    font-size: clamp(0.85rem, 0.4566rem + 1.9672vw, 1rem);
+    /* outline: 1px solid red; */
+  }
 
-    /* skills section */
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+    height: 35px;
+    width: 35px;
+  }
 
-    /* projects section */
-    .project-item {
-        padding: 0.5rem;
-    }
+  /* about section */
+  .about p {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    margin-bottom: 0.5rem;
+  }
 
-    /* title of project */
-    h2 { 
-        font-size: clamp(1.4rem, -0.1738rem + 7.8689vw, 2rem);
-        text-align: center;
-    }
+  /* skills section */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  }
 
-    /* tech used*/
-    h3 {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-        text-align: center;
-    }
-    
-    .project-description {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-        margin-bottom: 1rem;
-        margin-inline: 0.1rem;
-    }
-    
-    .project-description a {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-    }
-    .project-hyperlinks {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: -1rem;
-    }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
 
-    .project-hyperlinks a p{
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-        padding: 1rem;
-        margin-bottom: 0.1rem;
-        margin-inline: 0.1rem;
-        text-align: center;
-    }
+  /* title of project */
+  h2 {
+    font-size: clamp(1.4rem, -0.1738rem + 7.8689vw, 2rem);
+    text-align: center;
+  }
 
-    /* quotation section */
-    .quotation {
-        margin: 2% 0;
-        /* outline: 1px solid red; */
-    }
+  /* tech used*/
+  h3 {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    text-align: center;
+  }
 
-    .quotation p {
-        margin-top: 1rem;
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
-    }
+  .project-description {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    margin-bottom: 1rem;
+    margin-inline: 0.1rem;
+  }
 
-    .quotation b {
-        font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);  
-    }
+  .project-description a {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+  }
 
-} 
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
 
+  .project-hyperlinks a p {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    padding: 1rem;
+    margin-bottom: 0.1rem;
+    margin-inline: 0.1rem;
+    text-align: center;
+  }
 
-
+  /* quotation section */
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    /* outline: 1px solid red; */
+  }
+}
