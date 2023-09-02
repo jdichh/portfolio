@@ -103,7 +103,6 @@ a,
 
 .text-color-off-white {
     color: colors.$off-white;
-    
 }
 
 .text-color-sonic-blue {
@@ -150,19 +149,14 @@ header {
     display: inline-block;
     padding: 0 1.5rem;
     list-style: none;
-}
 
-.navLinks li a:hover {
-    transition: all 0.5 ease 0s;
-}
-
-li a, 
-.wrapper p {
-    color: colors.$off-white;
-}
-
-.navLinks li a:hover {
-    color: colors.$sonic-blue;
+    a {
+        transition: 0.1s ease-in-out;
+        color: colors.$off-white;
+        &:hover {
+            color: colors.$sonic-blue;
+        }
+    }
 }
 
 h1,
@@ -186,4 +180,7 @@ li, a {
 
 .wrapper {
     padding: 3% 10% 3rem 10%;
+    p {
+        color: colors.$off-white;
+    }
 }

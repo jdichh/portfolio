@@ -12,7 +12,7 @@
 
 .centered-on-screen {
   width: 100%;
-  max-width: 2560px;
+  max-width: 3000px;
   margin: 0 auto;
 }
 
@@ -150,16 +150,10 @@ header {
   padding: 0 1.5rem;
   list-style: none;
 }
-
-.navLinks li a:hover {
-  transition: all 0.5 ease 0s;
-}
-
-li a,
-.wrapper p {
+.navLinks li a {
+  transition: 0.1s ease-in-out;
   color: #dadada;
 }
-
 .navLinks li a:hover {
   color: #6e99c4;
 }
@@ -185,6 +179,9 @@ li, a {
 .wrapper {
   padding: 3% 10% 3rem 10%;
 }
+.wrapper p {
+  color: #dadada;
+}
 
 .hero-section-margin-block {
   margin-block: 7.5rem;
@@ -207,12 +204,12 @@ li, a {
   margin-top: 0.5rem;
   width: 45px;
   height: 45px;
+  transition: 0.1s ease-in-out;
   /* outline: 1px solid red; */
 }
-
 .hero-section-hyperlinks img:hover {
+  border-radius: 2px;
   background-color: #6e99c4;
-  /* outline: 1px solid red; */
 }
 
 .tools {
