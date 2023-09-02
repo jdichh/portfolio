@@ -7,22 +7,17 @@
 
 .my-name {
     font-family: 'Archivo', sans-serif;
-    font-size: 3.25rem;
-    font-weight: 800;
+    font-size: 3rem;
 }
 
 .job-position {
-    /* job position */
     font-size: 1.3rem;
-    /* outline: 1px solid red; */
 }
 
 .hero-section-hyperlinks img {
     margin-top: 0.5rem;
-    width: 45px;
-    height: 45px;
     transition: 0.1s ease-in-out;
-    /* outline: 1px solid red; */
+
     &:hover {
         border-radius: 2px;
         background-color: colors.$sonic-blue;
