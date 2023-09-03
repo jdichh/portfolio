@@ -1,0 +1,13 @@
+{
+  "name": "Jason Dichoso's Portfolio",
+  "background_color": "#131217",
+  "theme_color": "#6e99c4",
+  "start_url": "https://jdichh.netlify.app/",
+  "icons": [
+    {
+        "src": "./img/maskable_icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }
+  ]
+}
