@@ -3,6 +3,7 @@
   "background_color": "#131217",
   "theme_color": "#6e99c4",
   "start_url": "https://jdichh.netlify.app/",
+  "display": "fullscreen",
   "icons": [
     {
         "src": "./img/maskable_icon.png",
