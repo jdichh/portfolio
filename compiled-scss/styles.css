@@ -124,6 +124,10 @@ a,
   margin-left: 0.3rem;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 header {
   position: fixed;
   width: 100%;
