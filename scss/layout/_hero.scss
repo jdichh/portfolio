@@ -14,12 +14,17 @@
     font-size: 1.3rem;
 }
 
-.hero-section-hyperlinks img {
+.hero-section-hyperlinks {
     margin-top: 0.5rem;
-    transition: 0.1s ease-in-out;
 
-    &:hover {
-        border-radius: 2px;
-        background-color: colors.$sonic-blue;
+    .hero-section-hyperlinks-img {
+        max-width: 40px;
+        max-height: 40px;
+        transition: 0.1s ease-in-out;
+        
+        &:hover {
+            border-radius: 2px;
+            background-color: colors.$sonic-blue;
+        }
     }
 }

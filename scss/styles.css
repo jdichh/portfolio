@@ -1,0 +1,580 @@
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 4.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: #131217;
+  scroll-behavior: smooth;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.centered-on-screen {
+  width: 100%;
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+h3,
+li,
+a,
+.wrapper p,
+.project-description,
+.quotation {
+  font-weight: 400;
+}
+
+.block-size-auto {
+  block-size: auto;
+}
+
+.float-left-img {
+  float: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-not-wrapped {
+  flex-wrap: nowrap;
+}
+
+.flex-wrapped {
+  flex-wrap: wrap;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.height-auto {
+  height: auto;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.offwhite-outline {
+  outline: 1px solid #dadada;
+}
+
+.sonicblue-outline {
+  outline: 1px solid #6e99c4;
+}
+
+.text-color-off-white {
+  color: #dadada;
+}
+
+.text-color-sonic-blue {
+  color: #6e99c4;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  margin-left: 0.3rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 10%;
+  border-bottom: 2px solid #6e99c4;
+}
+
+.navBar {
+  margin-right: -1.5rem;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks[data-visible=true] {
+  transform: translateX(0%);
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0 1.5rem;
+  list-style: none;
+}
+.navLinks li a {
+  transition: 0.1s ease-in-out;
+  color: #dadada;
+}
+.navLinks li a:hover {
+  color: #6e99c4;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+li, a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 3% 10% 3rem 10%;
+}
+.wrapper p {
+  color: #dadada;
+}
+
+.hero-section-margin-block {
+  margin-block: 7.5rem;
+  /* outline: 1px solid red; */
+}
+
+.my-name {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem;
+}
+
+.job-position {
+  font-size: 1.3rem;
+}
+
+.hero-section-hyperlinks {
+  margin-top: 0.5rem;
+}
+.hero-section-hyperlinks .hero-section-hyperlinks-img {
+  max-width: 40px;
+  max-height: 40px;
+  transition: 0.1s ease-in-out;
+}
+.hero-section-hyperlinks .hero-section-hyperlinks-img:hover {
+  border-radius: 2px;
+  background-color: #6e99c4;
+}
+
+.tools {
+  margin-bottom: 2rem;
+  /* outline: 1px solid red; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  margin-bottom: 2rem;
+  /* outline: 1px solid red; */
+}
+
+.grid-item {
+  padding-block: 2rem;
+  margin: 0.3em;
+  outline: 1px solid #6e99c4;
+}
+
+.grid-item svg {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-img-size {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.svg-font-size {
+  font-size: 1rem;
+}
+
+/* quotation section */
+footer {
+  margin-bottom: 2%;
+  max-width: 900px;
+}
+
+.quotation p {
+  font-size: 1rem;
+}
+
+.quotation b {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* footer section */
+.footer {
+  margin: 3% 15%;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  /* outline: 1px solid red; */
+}
+
+.projects {
+  border-bottom: 2px solid #6e99c4;
+  /* outline: 1px solid red; */
+}
+
+.project-item {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  outline: 1px solid #6e99c4;
+}
+
+.project-description {
+  font-size: 1.125rem;
+}
+
+.project-description a {
+  font-size: 1.125rem;
+}
+
+.project-hyperlinks a {
+  margin-left: 1rem;
+}
+
+.project-hyperlinks a p {
+  background-color: #6e99c4;
+  color: #131217;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.mini-project-container {
+  margin-top: 4rem;
+}
+
+.toggleButton {
+  display: none;
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  border: 0;
+}
+
+.line {
+  fill: none;
+  stroke: #dadada;
+  stroke-width: 6;
+  transition: stroke-dasharray 250ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.dimmedBackground {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) and (max-width: 971px) {
+  * {
+    scroll-padding-top: 4.5em;
+  }
+  header {
+    padding: 2% 7.5%;
+  }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
+  .my-name {
+    font-size: clamp(3rem, 2.5462rem + 1.2308vw, 3.2rem);
+  }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+  }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
+  /* h2=title of project h3=tech used*/
+  h2,
+  h3 {
+    text-align: center;
+  }
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
+  .project-hyperlinks a p {
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+  }
+}
+@media (min-width: 442px) and (max-width: 599px) {
+  * {
+    scroll-padding-top: 4.5em;
+  }
+  .toggleButton {
+    display: flex;
+    z-index: 9999;
+    margin-right: clamp(0.688rem, -1.38rem + 7.483vw, 1.375rem);
+  }
+  .navLinks {
+    position: fixed;
+    inset: 0 0 0 60%;
+    display: flex;
+    padding: min(15vh, 10rem) 1rem;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 200ms ease-out;
+    border-left: 1px solid #6e99c4;
+  }
+  .navLinks li {
+    padding-bottom: 1.25rem;
+    text-align: right;
+  }
+  header {
+    padding: 2.5% 7.5%;
+  }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
+  .my-name {
+    font-size: clamp(2.5rem, 0.9966rem + 5.4422vw, 3rem);
+  }
+  .job-position {
+    font-size: clamp(1rem, 0.3986rem + 2.1769vw, 1.2rem);
+    /* outline: 1px solid red; */
+  }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
+  /* about section */
+  .about p {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    margin-bottom: 1rem;
+  }
+  /* skills section */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
+  /* title of project */
+  h2 {
+    text-align: center;
+  }
+  /* tech used*/
+  h3 {
+    font-size: clamp(1rem, 0.8497rem + 0.5442vw, 1.05rem);
+    text-align: center;
+  }
+  .project-description {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    margin-bottom: 1rem;
+  }
+  .project-description a {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+  }
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
+  .project-hyperlinks a p {
+    font-size: clamp(1rem, 0.6993rem + 1.0884vw, 1.1rem);
+    padding: 1rem;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+  }
+}
+@media (min-width: 320px) and (max-width: 441px) {
+  * {
+    scroll-padding-top: 3.5em;
+  }
+  .toggleButton {
+    display: flex;
+    z-index: 9999;
+    margin-top: -2.5px;
+    margin-right: clamp(0rem, -1.653rem + 8.264vw, 0.625rem);
+  }
+  .navLinks {
+    position: fixed;
+    inset: 0 0 0 50%;
+    display: flex;
+    padding: min(15vh, 10rem) 1rem;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 200ms ease-out;
+    border-left: 1px solid #6e99c4;
+  }
+  .navLinks li {
+    padding-bottom: 1.25rem;
+    text-align: right;
+  }
+  header {
+    padding: 2.5% 7.5%;
+  }
+  .wrapper {
+    padding: 5% 7.5%;
+  }
+  /* hero section */
+  .my-name {
+    font-size: clamp(2rem, 0.6777rem + 6.6116vw, 2.5rem);
+  }
+  .job-position {
+    font-size: clamp(0.85rem, 0.4566rem + 1.9672vw, 1rem);
+    /* outline: 1px solid red; */
+  }
+  .hero-section-hyperlinks img {
+    margin-top: 0.5rem;
+    height: 35px;
+    width: 35px;
+  }
+  /* about section */
+  .about p {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    margin-bottom: 0.5rem;
+  }
+  /* skills section */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  }
+  /* projects section */
+  .project-item {
+    padding: 0.5rem;
+  }
+  /* title of project */
+  h2 {
+    font-size: clamp(1.4rem, -0.1738rem + 7.8689vw, 2rem);
+    text-align: center;
+  }
+  /* tech used*/
+  h3 {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    text-align: center;
+  }
+  .project-description {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    margin-bottom: 1rem;
+    margin-inline: 0.1rem;
+  }
+  .project-description a {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+  }
+  .project-hyperlinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1rem;
+  }
+  .project-hyperlinks a p {
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+    padding: 1rem;
+    margin-bottom: 0.1rem;
+    margin-inline: 0.1rem;
+    text-align: center;
+  }
+  .quotation {
+    margin-bottom: 2%;
+    margin-inline: 10%;
+    font-size: clamp(0.9rem, 0.6377rem + 1.3115vw, 1rem);
+  }
+}/*# sourceMappingURL=styles.css.map */
