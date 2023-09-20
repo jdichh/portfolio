@@ -275,6 +275,7 @@ footer {
 
 .project-description {
   font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .project-description a {
@@ -288,7 +289,6 @@ footer {
 .project-hyperlinks a p {
   background-color: #6e99c4;
   color: #131217;
-  margin-top: 1rem;
   font-size: 1.1rem;
   padding: 0.5rem;
 }
