@@ -4,6 +4,6 @@ Update as of 9/23/2023: I've recently remade my portfolio in Next.js 13 [here](h
 
 ## Checklist
 <ul>
-  <li><strike>Migrate to Next.js</strike> (Started 9/22/2023, Ended 9/23/2023)</li>
+  <li><strike>Migrate to Next.js</strike> (Started 9/21/2023, Ended 9/23/2023)</li>
   <li>Improve HTML semantics</li>
 </ul>
